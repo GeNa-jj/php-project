@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "第二阶段项目",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeNa-jj/porject.git"
+  },
+  "author": "lujianjun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeNa-jj/porject/issues"
+  },
+  "homepage": "https://github.com/GeNa-jj/porject#readme"
+}

@@ -1,0 +1,51 @@
+.title_top {
+  border-bottom: 1px solid #ddd;
+  height: 27px;
+}
+
+.title_top .container {
+  height: 27px;
+}
+
+.title_top .container .title_top_fl {
+  width: 250px;
+  height: 27px;
+  float: left;
+}
+
+.title_top .container .title_top_fl li {
+  float: left;
+  height: 20px;
+}
+
+.title_top .container .title_top_fl li a {
+  font-size: 12px;
+  line-height: 28px;
+  height: 20px;
+  padding: 0 18px;
+  color: #3c3c3c;
+  width: 16px;
+}
+
+.title_top .container .title_top_fl li a:hover {
+  color: #FF3B3B;
+}
+
+.title_top .container .title_top_fl li:nth-child(1) {
+  width: 60px;
+}
+
+.title_top .container .title_top_fl li:nth-child(2) {
+  width: 84px;
+  background: url("../img/xiaotubiao.png") no-repeat 0 8px;
+}
+
+.title_top .container .title_top_fl li:nth-child(3) {
+  margin-left: 10px;
+  width: 94px;
+  background: url("../img/xiaotubiao.png") no-repeat 0 -48px;
+}
+
+.title_top .container .title_top_fr {
+  float: right;
+}

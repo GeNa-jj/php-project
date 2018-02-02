@@ -1,0 +1,20 @@
+.title_top{
+    border-bottom: 1px solid #ddd;height: 27px;
+    .container{
+        height: 27px;
+        .title_top_fl{
+            width: 250px;height: 27px;float: left;
+            li{
+                float: left;height: 20px;
+                a{font-size: 12px;line-height: 28px;height: 20px;padding: 0 18px;color: #3c3c3c;width: 16px}
+                a:hover{color: #FF3B3B;}
+            }
+            li:nth-child(1){width: 60px;}
+            li:nth-child(2){width: 84px;background: url("../img/xiaotubiao.png") no-repeat 0 8px;}
+            li:nth-child(3){margin-left: 10px;width: 94px;background: url("../img/xiaotubiao.png") no-repeat 0 -48px;}
+        }
+        .title_top_fr{
+            float: right;
+        }
+    }
+}
