@@ -22,7 +22,6 @@
             li:nth-child(2){
                 a:first-child{padding-left: 18px;}
                 a:last-child{padding-right: 18px;}
-                a:hover{color: #FF3B3B;}
             }
             li:nth-child(3){
                 a{
@@ -30,6 +29,7 @@
                     color: #fff;
                     background: #FF3D3B url("../img/xiaotubiao.png") 10px -108px no-repeat;   
                 }
+                a:hover{color: #000;}
             }
             li:nth-child(4){
                 a{
@@ -116,7 +116,7 @@ header{
                     li:nth-child(8){
                         background: url("../img/navicon.png") 10px -739px no-repeat;
                     }
-                    .active{color:#ff3d3b;font-weight: bold;
+                    .act{color:#ff3d3b;font-weight: bold;
                     }
                 }
             }
@@ -134,10 +134,10 @@ header{
                 }
             }
             .navMenu2{
-                width: 545px;height: 400px;position: relative;display: inline-block;z-index: 100;border: 1px solid #ccc;border-left: 0 none;background: #fff;opacity: 0.9;display: none;
+                width: 545px;height: 400px;position: relative;top: 1px;display: inline-block;z-index: 100;border: 1px solid #ccc;border-left: 0 none;background: #fff;opacity: 0.9;display: none;
                 .navMenu3{
                     position: absolute;left: 0;top: 0;padding: 25px 20px;display: none;
-                    li{width: 504px;height: 40px;margin-bottom: 12px}
+                    li{width: 504px;margin-bottom: 12px}
                     a{color: #666;font-size: 12px;}
                     h3{
                         a{
@@ -146,6 +146,37 @@ header{
                     }
                     
                 }
+            }
+        }
+    }
+}
+.banner{
+    background-color: rgb(252,236,218);
+    .container{
+        height: 400px;
+        .bannerL{
+            float: left;margin-left: 190px;width: 810px;height: 400px;overflow: hidden; position: relative;
+            ul{position: absolute;overflow: hidden}
+            li{float: left;}
+            img{width: 810px;height: 400px;display: block;}
+            .page{
+                position:absolute;right:0;bottom:0;padding:10px;
+                span{
+                    display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);
+                }
+                .active{background-color: rgba(255,0,0,.8);}
+            }
+            .zuo{position: absolute;left: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
+            .you{position: absolute;right: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
+            .zuo:hover,.you:hover{background-color: #fc0;cursor: pointer;}
+        }
+        .bannerR{
+            float: left;width: 200px;height: 400px;background-color: rgb(252,236,218);
+            .bannerRT{
+                width: 200px;height: 200px;background: url("../img/bannerR.png") no-repeat;
+            }
+            .bannerRB{
+                width: 200px;height: 200px;background: url("../img/zhibojian.png") no-repeat;
             }
         }
     }

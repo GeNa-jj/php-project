@@ -67,14 +67,15 @@
                     if(opt.seamless){
                         var $page = $('<div/>');
                         $page.addClass('page');
+                        opt.span=[];
                         for(var i=1;i<len;i++){
                             var $span = $('<span/>');
                             $span.text(i);
+                            opt.span.push($span);
                             $page.append($span);
                         }
                         $this.append($page);
-                        var $spans=$('span');
-                        $spans.first().addClass('active');
+                        opt.span[0].addClass('active');
                         $this.on('click','span',function(){
                             opt.index=this.innerHTML-1;
                             bian();
@@ -82,14 +83,15 @@
                      }else{
                         var $page = $('<div/>');
                         $page.addClass('page');
+                        opt.span=[];
                         for(var i=1;i<=len;i++){
                             var $span = $('<span/>');
                             $span.text(i);
+                            opt.span.push($span);
                             $page.append($span);
                         }
                         $this.append($page);
-                        var $spans=$('span');
-                        $spans.first().addClass('active');
+                        opt.span[0].addClass('active');
                         $this.on('click','span',function(){
                             opt.index=this.innerHTML-1;
                             bian();
@@ -149,24 +151,22 @@
                 var target = -opt.width*opt.index;
                 $ul.stop().animate({'left':target});
                 if(opt.page){
-                    var $span = $('span');
-                    $.each($span,function(idx,item){
+                    $.each(opt.span,function(idx,item){
                         $(item).removeClass('active');
                     });
                     if(opt.seamless){
-                        if(opt.index<len-1){
-                            $span.eq(opt.index).addClass('active');
+                        if(opt.index<len-1){ 
+                            opt.span[opt.index].addClass('active');
                         }else{
-                            $span.first().addClass('active');
+                            opt.span[0].addClass('active');
                         }
                     }else{
                         if(opt.index<len){
-                            $span.eq(opt.index).addClass('active');
+                            opt.span[opt.index].addClass('active');
                         }else{
-                            $span.first().addClass('active');
+                            opt.span[0].addClass('active');
                         } 
                     }
-                    
                 }
             }   
         });

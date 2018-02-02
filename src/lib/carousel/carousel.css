@@ -1,11 +1,11 @@
-ul{list-style: none;overflow: hidden;position: absolute;padding: 0;margin: 0;}
-.box{/*border: 10px solid #ccc;*/margin: 100px auto;width: 810px;height: 320px; overflow: hidden; position: relative;}
-img{display: block;}
-li{float: left;}
+.box ul{list-style: none;overflow: hidden;position: absolute;}
+.box{width: 810px;height: 320px; overflow: hidden; position: relative;}
+.box img{display: block;}
+.box li{float: left;}
 .box .page{position:absolute;right:0;bottom:0;padding:10px;}
 .box .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
-.box .page span.active{background-color: rgba(255,0,0,.8);}
-.box .page span:hover{cursor: pointer;}
+.active{background-color: rgba(255,0,0,.8);}
+.page span:hover{cursor: pointer;}
 .zuo{position: absolute;left: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
 .you{position: absolute;right: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
 .zuo:hover,.you:hover{background-color: #fc0;cursor: pointer;}

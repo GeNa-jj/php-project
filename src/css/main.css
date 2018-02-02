@@ -1,0 +1,30 @@
+main .container {
+  height: 5070px;
+}
+
+main .container .hotSales {
+  height: 150px;
+  background-color: #ccc;
+}
+
+main .container .hotSales li {
+  float: left;
+  width: 252px;
+  border: 1px solid #efefef;
+  border-left: 0 none;
+  height: auto;
+  overflow: hidden;
+  height: 150px;
+  overflow: hidden;
+}
+
+main .container .hotSales li a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+main .container .hotSales .hot {
+  width: 190px;
+  border-right: 2px solid #efefef;
+}

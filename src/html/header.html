@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/header.css" />
     <script src="../lib/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="../lib/carousel/carousel.js" type="text/javascript"></script>
 </head>
 <body style="shouye">
     <div class="title_top">
@@ -85,12 +86,12 @@
                             $ul.on('mouseenter','li',function(){   
                                     idx = $(this).index(); 
                                     var y = $(this).css('backgroundPositionY').match(/[-]\d+/)[0]*1+50;
-                                    $(this).addClass('active').css({'background-position':'10px '+y+'px','backgroundColor':'#fff'});
+                                    $(this).addClass('act').css({'background-position':'10px '+y+'px','backgroundColor':'#fff'});
                                     $navMenu2.css('display','inline-block');
                                     $navMenu3.eq(idx).css('display','inline-block');
                                                
                             }).on('mouseleave','li',function(){
-                                    $(this).removeClass('active').css({'background-position':'','backgroundColor':''});  
+                                    $(this).removeClass('act').css({'background-position':'','backgroundColor':''});  
                                     $navMenu2.css('display','none');
                                     $navMenu3.eq(idx).css('display','none');  
                             });
@@ -396,10 +397,6 @@
                                 
                                 <a href="#">
                                     尼康/NIKON
-                                </a>&nbsp;
-                                
-                                <a href="#">
-                                    宾得-Pantex
                                 </a>&nbsp;
                                 
                             </li>
@@ -1351,5 +1348,26 @@
             </nav>
         </div>
     </header>
+    <div class="banner">
+        <div class="container">
+            <div class="bannerL"></div>
+            <div class="bannerR">
+                <div class="bannerRT"></div>
+                <div class="bannerRB"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(function($){
+                var $box = $('.bannerL');
+                $box.carousel({
+                    width:810,
+                    height:400,
+                    duration:5000,
+                    imgs:['../img/banner1.jpg','../img/banner2.jpg','../img/banner3.jpg','../img/banner4.jpg','../img/banner5.jpg']
+                });
+
+            });
+        </script>
+    </div>
 </body>
 </html>

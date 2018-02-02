@@ -71,14 +71,14 @@
   padding-right: 18px;
 }
 
-.title_top .container .title_top_fr li:nth-child(2) a:hover {
-  color: #FF3B3B;
-}
-
 .title_top .container .title_top_fr li:nth-child(3) a {
   padding: 0 18px 0 27px;
   color: #fff;
   background: #FF3D3B url("../img/xiaotubiao.png") 10px -108px no-repeat;
+}
+
+.title_top .container .title_top_fr li:nth-child(3) a:hover {
+  color: #000;
 }
 
 .title_top .container .title_top_fr li:nth-child(4) a {
@@ -255,7 +255,7 @@ header .container nav #navAll .navMenu li:nth-child(8) {
   background: url("../img/navicon.png") 10px -739px no-repeat;
 }
 
-header .container nav #navAll .navMenu .active {
+header .container nav #navAll .navMenu .act {
   color: #ff3d3b;
   font-weight: bold;
 }
@@ -308,6 +308,7 @@ header .container nav .navMenu2 {
   width: 545px;
   height: 400px;
   position: relative;
+  top: 1px;
   display: inline-block;
   z-index: 100;
   border: 1px solid #ccc;
@@ -327,7 +328,6 @@ header .container nav .navMenu2 .navMenu3 {
 
 header .container nav .navMenu2 .navMenu3 li {
   width: 504px;
-  height: 40px;
   margin-bottom: 12px;
 }
 
@@ -341,4 +341,116 @@ header .container nav .navMenu2 .navMenu3 h3 a {
   font-weight: bold;
   color: #333;
   padding-bottom: 5px;
+}
+
+.banner {
+  background-color: #fcecda;
+}
+
+.banner .container {
+  height: 400px;
+}
+
+.banner .container .bannerL {
+  float: left;
+  margin-left: 190px;
+  width: 810px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .container .bannerL ul {
+  position: absolute;
+  overflow: hidden;
+}
+
+.banner .container .bannerL li {
+  float: left;
+}
+
+.banner .container .bannerL img {
+  width: 810px;
+  height: 400px;
+  display: block;
+}
+
+.banner .container .bannerL .page {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.banner .container .bannerL .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner .container .bannerL .page .active {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.banner .container .bannerL .zuo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 50px;
+  opacity: 0.8;
+  text-align: center;
+  display: none;
+  color: #fff;
+}
+
+.banner .container .bannerL .you {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 50px;
+  opacity: 0.8;
+  text-align: center;
+  display: none;
+  color: #fff;
+}
+
+.banner .container .bannerL .zuo:hover, .banner .container .bannerL .you:hover {
+  background-color: #fc0;
+  cursor: pointer;
+}
+
+.banner .container .bannerR {
+  float: left;
+  width: 200px;
+  height: 400px;
+  background-color: #fcecda;
+}
+
+.banner .container .bannerR .bannerRT {
+  width: 200px;
+  height: 200px;
+  background: url("../img/bannerR.png") no-repeat;
+}
+
+.banner .container .bannerR .bannerRB {
+  width: 200px;
+  height: 200px;
+  background: url("../img/zhibojian.png") no-repeat;
 }
