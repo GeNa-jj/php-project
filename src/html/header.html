@@ -5,8 +5,9 @@
     <title>头部</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <script src="../lib/jquery-3.2.1.js" type="text/javascript"></script>
 </head>
-<body>
+<body style="shouye">
     <div class="title_top">
         <div class="container">
             <ul class="title_top_fl">
@@ -15,18 +16,1340 @@
                 <li><a href="#">关注摩西</a></li>
             </ul>
             <ul class="title_top_fr">
-                <li class="welcome">您好，欢迎来到摩西！</li>
+                <li>您好，欢迎来到摩西！</li>
                 <li>
-                    <a class="login loginbonder">登录</a>&nbsp; 
-                    <a href="#">免费注册</a> 
+                    <a class="denglu" href="#">登录</a>&nbsp; 
+                    <a class="zhuce" href="#">免费注册</a> 
                 </li>
-                <li><a href="#">
-                    购物车 <strong style="font-weight:700;" id="head_car_count"></strong>  件商品</a></li>
-                <li><a class="Online_service" href="http://www.moximoxi.net/CustomSupport.aspx">
-                    在线客服 400-660-6366</a></li>
-
+                <li>
+                    <a href="#">购物车<strong style="font-weight:700;" id="head_car_count"></strong>  件商品</a>
+                </li>
+                <li>
+                    <a href="#">在线客服 400-660-6366</a>
+                </li>
             </ul>
         </div>
     </div>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <h1>
+                        <a href="#">摩西网</a>
+                    </h1>
+                    <span></span>
+                </div>
+                <div class="search">
+                    <div class="riyuanhuilv">
+                    日元汇率：0.057781
+                    （100日元＝5.7781元）
+                    </div>
+                    <div class="searchTop">
+                        <input id="txt-header-search" class="searchTopL" type="text" placeholder="" />
+                        <button id="btn-header-search" class="searchTopR">搜 索</button>  
+                    </div>
+                    <div class="searchLinks">
+                        <span>热门搜索：</span>
+                        <a href="#">酵素</a>
+                        <a href="#">白色恋人</a>
+                        <a href="#">胶原蛋白</a>
+                        <a href="#">象印</a>
+                        <a href="#">MTG</a>
+                        <a href="#">SONY</a>
+                        <a href="#">膳魔师</a>
+                        <a href="#">花王</a>
+                    </div>
+                </div>
+                <div class="searchRight">
+                </div>
+            </div>
+            <nav>
+                <span id="navAll">商品全部分类
+                    <ul class="navMenu">
+                        <li>摩西热卖</li>
+                        <li>食品饮料</li>
+                        <li>营养保健</li>
+                        <li>美妆护肤</li>
+                        <li>母婴用品</li>
+                        <li>家居生活</li>
+                        <li>数码电器</li>
+                        <li>成人用品</li>
+                    </ul>
+
+                    <script type="text/javascript">
+                        jQuery(function($){
+                            var $ul = $('.navMenu');
+                            var $navMenu3 = $('.navMenu3');
+                            var $navMenu2 = $('.navMenu2');
+                            var idx = null;
+                            $ul.on('mouseenter','li',function(){   
+                                    idx = $(this).index(); 
+                                    var y = $(this).css('backgroundPositionY').match(/[-]\d+/)[0]*1+50;
+                                    $(this).addClass('active').css({'background-position':'10px '+y+'px','backgroundColor':'#fff'});
+                                    $navMenu2.css('display','inline-block');
+                                    $navMenu3.eq(idx).css('display','inline-block');
+                                               
+                            }).on('mouseleave','li',function(){
+                                    $(this).removeClass('active').css({'background-position':'','backgroundColor':''});  
+                                    $navMenu2.css('display','none');
+                                    $navMenu3.eq(idx).css('display','none');  
+                            });
+                                 
+                        });
+                    </script> 
+                </span>
+                <ul class="nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">国内现货</a></li>
+                    <li><a href="#">日本现货</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">乐天专区</a></li>
+                    <li><a href="#">日本亚马孙专区</a></li>
+                    <li><a href="#">代购/代拍</a></li>
+                    <li><a href="#">留言板</a></li>
+                </ul>
+                <div class="navMenu2">
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        热门搜索
+                                        > </a>
+                                </h3>
+                                
+                                <a href="#">
+                                    面膜
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    酵素
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    清汁
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    美容
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    姨妈巾
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    白色恋人
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    Cosme
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    避孕套
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    胶原蛋白
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    北海道特产
+                                </a>&nbsp;
+                                
+                            </li>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        日本零食
+                                        > </a>
+                                </h3>
+                                
+                                <a href="#">
+                                    白色恋人
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    卡乐比
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    雀巢
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    TOKYO BANANA
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    明治
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    花田牧场
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    巧克力
+                                </a>&nbsp;
+                                
+                            </li>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        大牌母婴
+                                        > </a>
+                                </h3>
+                                
+                                <a href="#">
+                                    花王
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    大王
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    贝亲
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    森永
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    和光堂
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    固力果
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    mama&kids
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    Sassy
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    明治
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    爱迪生
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    津山
+                                </a>&nbsp;
+                                
+                            </li>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        保健养生
+                                        > </a>
+                                </h3>
+                                
+                                <a href="#">
+                                    东茶园
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    大高酵素
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    公主酵素
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    医食同源
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    Manda/万田酵素
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    KOBAYASHI/小林制药
+                                </a>&nbsp;
+                                
+                            </li>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        美妆护肤
+                                        > </a>
+                                </h3>
+                                
+                                <a href="#">
+                                    Fancl
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    Kose/高丝
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    DHC
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    SK-II
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    SANA 豆乳
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    肌研
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    植村秀
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    kiss me
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    豆腐の盛田屋
+                                </a>&nbsp;
+                                
+                            </li>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        居家日用
+                                        > </a>
+                                </h3>
+                                
+                                <a href="#">
+                                    象印
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    虎牌
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    孔雀
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    狮王LION
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    膳魔师
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    京瓷
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    今治
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    Polident/保丽净
+                                </a>&nbsp;
+                                
+                            </li>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        时尚数码
+                                        > </a>
+                                </h3>
+                                
+                                <a href="#">
+                                    SONY/索尼
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    铁三角/audio-technica
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    卡西欧/CASIO
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    博士/BOSE
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    尼康/NIKON
+                                </a>&nbsp;
+                                
+                                <a href="#">
+                                    宾得-Pantex
+                                </a>&nbsp;
+                                
+                            </li>
+                            
+                        </ul>
+                    </div>
+           
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        零食坚果
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        巧克力
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        糖果
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        膨化
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        肉干肉脯
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        饼干糕点
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        饼干
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        夹心
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        糕点
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        酒水饮料
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        水果蔬汁
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        茶
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        碳酸饮料
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        功能饮料
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        咖啡冲调
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        麦片
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        奶粉
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        速溶咖啡
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        咖啡豆
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        可可粉
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                        </ul>
+                    </div>
+                  
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        营养成分
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        维生素
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        蛋白质
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        营养健康
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        减肥瘦身
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        排毒养颜
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        增强免疫/抗疲劳
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        调理保健
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        减肥丰胸
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        家庭药箱
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                        </ul>
+                    </div>
+                  
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        洗发护发
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        洗发水
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        护发素
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        定型
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        无硅产品
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        沐浴用品
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        沐浴露
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        香皂
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        洗手液
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        浴盐
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        沐浴套装
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        止汗香体
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        足部
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        手部护理
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        身体护理
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        身体乳
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        面部护肤
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        洁面
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        面膜
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        化妆水
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        乳液面霜
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        眼霜/眼膜
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        去角质/黑头/祛痘
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        防晒
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        卸妆
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        保湿
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        美白
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        精华/精油
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        彩妆香氛
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        BB霜
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        粉底
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        男士香水
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        女士香水
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        唇膏/口红
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        美甲
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        腮红/胭脂
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        眉笔/眉粉/眉膏
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        假睫毛
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        睫毛膏/增长液
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        眼线
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        蜜粉/散粉
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        粉饼
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        女性护理
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        护垫
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        口腔护理
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        牙刷/电动牙刷
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        牙膏
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        牙粉/牙贴
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        牙线/牙线棒
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        儿童口腔护理
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                        </ul>
+                    </div>
+                  
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        奶粉辅食
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        奶粉
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        米粉/菜粉
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        宝宝零食
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        面条/粥饭
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        果泥/果汁/菜泥/肉泥
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        尿裤湿巾
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        纸尿裤
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        拉拉裤
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        婴儿湿巾
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        宝宝喂养
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        奶瓶
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        奶嘴
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        牙胶安抚
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        暖奶/消毒
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        餐具
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        水壶/水杯
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        宝宝洗护
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        宝宝护肤
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        宝宝洗浴
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        洗衣液/皂
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        驱蚊防蚊
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        孕妈专区
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        营养品
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        产后修复
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        孕期化妆品
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        安全出行
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        安全座椅
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        学步车
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        宝宝玩具
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        益智玩具
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        模型
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                        </ul>
+                    </div>
+                  
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        厨房用具
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        烹饪锅具
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        刀具菜板
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        厨房配件
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        水具/酒具
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        餐具
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        茶具/咖啡具
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        生活日用
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        水壶/水杯
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        毛巾
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        浴巾
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        收纳用品
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        净化除味
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        纸品湿巾
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        衣物清洁
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        家庭清洁
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        驱虫用品
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                        </ul>
+                    </div>
+                  
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        家用小电器
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        电饭煲
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        空气净化器
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        微波炉/烤箱
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        面包机/松饼机
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        厨余处理
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        美容健康
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        美容仪
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        剃须刀
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        按摩器
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        汽车装饰
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        脚垫
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        坐垫
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        座套
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        头枕腰靠
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        空气净化
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        车内饰品
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        摄影摄像
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        数码相机
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        镜头
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        时尚影音
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        耳机/耳麦
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        音箱/音响
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        MP3/MP4
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        手机耳机
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        智能设备
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        智能手环
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        智能手表
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        健康检测
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        智能配饰
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        办公用品
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        笔类
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        本类
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        办公周边
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                        </ul>
+                    </div>
+                  
+                    <div class="navMenu3">
+                        <ul>
+                            
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        计生用品
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        超薄避孕套
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        特色安全套
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        女性用品
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        转震棒
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        振动棒
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        跳蛋
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        男性用品
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        阴臀倒模
+                                    </a>&nbsp; 
+                        
+                                    <a href="#">
+                                        人工阴道
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                            <li>
+                                <h3>
+                                    <a href="#">
+                                        延时润滑
+                                    </a>
+                                </h3>
+                                
+                                    <a href="#">
+                                        润滑剂
+                                    </a>&nbsp; 
+                        
+                                
+                        </li>
+                               
+                        </ul>
+                    </div>
+                  
+                </div>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>

@@ -61,3 +61,8 @@ s,i,em{font-style:normal;text-decoration:none;}
 .font14{ font-size: 14px;}
 .font16{ font-size: 16px;}
 *{box-sizing:border-box;}
+
+.shouye{   
+    min-width:1200px;_width:expression(document.body.clientWidth < 1200 ? "1200px" : "auto");
+    /* (这是最小宽度）*/ 
+}
