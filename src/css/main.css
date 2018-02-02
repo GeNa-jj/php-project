@@ -1,10 +1,13 @@
+main {
+  background-color: #f5f5f5;
+}
+
 main .container {
   height: 5070px;
 }
 
 main .container .hotSales {
   height: 150px;
-  background-color: #ccc;
 }
 
 main .container .hotSales li {
@@ -27,4 +30,176 @@ main .container .hotSales li a {
 main .container .hotSales .hot {
   width: 190px;
   border-right: 2px solid #efefef;
+}
+
+main .container .brandSales {
+  margin-top: 24px;
+  height: 284px;
+}
+
+main .container .brandSales a {
+  width: 300px;
+  height: 44px;
+  line-height: 44px;
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+main .container .brandSales span {
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+
+main .container .brandSales .brandSalesBL {
+  float: left;
+  width: 190px;
+  height: 238px;
+  background: url("../img/brandL.jpg");
+}
+
+main .container .brandSales .brandSalesBC {
+  float: left;
+}
+
+main .container .brandSales .brandSalesBC ul {
+  width: 812px;
+  height: 238px;
+  overflow: hidden;
+  border-top: 1px solid #efefef;
+  background-color: white;
+}
+
+main .container .brandSales .brandSalesBC ul li {
+  float: left;
+  width: 203px;
+  height: 79px;
+  overflow: hidden;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  position: relative;
+}
+
+main .container .brandSales .brandSalesBC ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+main .container .brandSales .brandSalesBC ul li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .container .brandSales .brandSalesBR {
+  float: left;
+  width: 198px;
+  height: 238px;
+  background: url("../img/brandR.jpg");
+}
+
+main .container #huodongtuijian {
+  height: 491px;
+  margin-top: 20px;
+}
+
+main .container #huodongtuijian .hdtjT {
+  height: 38px;
+}
+
+main .container #huodongtuijian .hdtjT i {
+  display: inline-block;
+  width: 30px;
+  height: 38px;
+  line-height: 36px;
+  margin-right: 15px;
+  background: url("../img/01.png");
+}
+
+main .container #huodongtuijian .hdtjT span {
+  font-size: 18px;
+  line-height: 38px;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #ee124b;
+}
+
+main .container #huodongtuijian .hdtjB {
+  height: 453px;
+  border-top: 2px solid #ee124b;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBL {
+  float: left;
+  width: 299px;
+  height: 451px;
+  overflow: hidden;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBL ul {
+  position: absolute;
+  overflow: hidden;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBL li {
+  float: left;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBL img {
+  width: 299px;
+  height: 451px;
+  display: block;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBL .page {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBL .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBL .page .active {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBR {
+  float: left;
+  width: 901px;
+  height: 451px;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBR li {
+  float: left;
+  width: 224px;
+  height: 224px;
+  background-color: #fff;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+main .container #huodongtuijian .hdtjB .hdtjBR li:nth-child(1), main .container #huodongtuijian .hdtjB .hdtjBR li:nth-child(6) {
+  width: 449px;
 }

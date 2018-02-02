@@ -35,6 +35,72 @@
                     });
                 </script>
             </div>
+            <div class="brandSales">
+                <h2>
+                    <a href="">品牌热卖<span> ブランドの使い方 </span></a>
+                </h2>
+                <div class="brandSalesB clearfix">
+                    <div class="brandSalesBL"></div>
+                    <div class="brandSalesBC clearfix">
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="../img/brand1.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand2.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand3.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand4.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand5.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand6.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand7.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand8.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand9.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand10.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand11.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/brand12.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="brandSalesBR"></div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        var $ul = $('.brandSalesBC ul');
+                        $ul.on('mouseenter','li img',function(){
+                            $(this).stop().animate({left:-5});
+                                 
+                        }).on('mouseleave','li img',function(){
+                            $(this).stop().animate({left:0});
+                                 
+                        })
+                    });
+                </script>
+            </div>
+            <div id="huodongtuijian">
+                <div class="hdtjT">
+                    <i></i>
+                    <span>活动推荐</span>
+                </div>
+                <div class="hdtjB">
+                    <div class="hdtjBL"></div>
+                    <div class="hdtjBR">
+                        <ul>
+                            <li><a href="#"><img src="../img/hdtj_1.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/hdtj_2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/hdtj_3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/hdtj_4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/hdtj_5.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/hdtj_6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('.hdtjBL').carousel({
+                            width:299,
+                            height:451,
+                            pn:false,
+                            imgs:['../img/banner_1.jpg','../img/banner_2.jpg','../img/banner_3.jpg','../img/banner_4.jpg']
+                        });
+                    })
+                </script>
+            </div>
         </div>
     </main>
 </body>
