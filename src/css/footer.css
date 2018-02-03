@@ -1,0 +1,138 @@
+footer {
+  height: 556px;
+  background: #f4f4f4;
+  border-top: #ff3333 solid 2px;
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+footer .ft {
+  height: 214px;
+}
+
+footer .ft .ftl {
+  width: 760px;
+  height: 214px;
+  float: left;
+}
+
+footer .ft .ftl .ftllist {
+  float: left;
+  width: 127px;
+}
+
+footer .ft .ftl .ftllist dt h3 {
+  text-align: center;
+  font: 14px/14px "Consolas";
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-right: 1px solid #ddd;
+  color: #333;
+}
+
+footer .ft .ftl .ftllist dd {
+  width: 127px;
+  height: 22px;
+  text-align: center;
+  font: 12px/22px "Consolas";
+  color: #999;
+}
+
+footer .ft .ftc {
+  float: left;
+  width: 240px;
+  height: 160px;
+  border-left: #ddd solid 1px;
+  border-right: #ddd solid 1px;
+  position: relative;
+}
+
+footer .ft .ftc .ftcc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 214px;
+}
+
+footer .ft .ftc .ftcc h3 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+footer .ft .ftc .ftcc span {
+  font-size: 12px;
+  line-height: 22px;
+  color: #999;
+  text-align: center;
+  display: block;
+}
+
+footer .ft .ftc .ftcc .tel {
+  margin-bottom: 16px;
+}
+
+footer .ft .ftc .ftcc a {
+  width: 120px;
+  height: 36px;
+  display: block;
+  margin: 2px auto;
+}
+
+footer .ft .ftr {
+  width: 196px;
+  height: 192px;
+  float: left;
+  text-align: center;
+}
+
+footer .ft .ftr img {
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+
+footer .ft .ftr h3 {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+footer .ft .ftr span {
+  margin: 0 45px;
+  display: block;
+  width: 110px;
+  text-align: center;
+  line-height: 20px;
+  color: #999;
+  font-size: 12px;
+}
+
+footer .fc {
+  height: 160px;
+  background-color: #efefef;
+}
+
+footer .fc .container {
+  height: 160px;
+  background: url("../img/f_baozheng.jpg") no-repeat;
+}
+
+footer .fb {
+  height: 98px;
+  text-align: center;
+}
+
+footer .fb p {
+  color: #333;
+  line-height: 30px;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+footer .fb a {
+  margin: 0 18px;
+}

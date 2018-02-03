@@ -1,7 +1,7 @@
 main{
     background-color: #f5f5f5;
     .container{
-        height: 5070px;
+        height: 5190px;padding-bottom: 120px;
         .hotSales{
             height: 150px;
             li{
@@ -38,7 +38,7 @@ main{
                 float: left;width: 198px;height: 238px;background: url("../img/brandR.jpg");
             }  
         }
-        #huodongtuijian{;
+        #huodongtuijian{
             .hdtjT{
                 i{background: url("../img/01.png");}
                 span{color: #ee124b;}
@@ -46,7 +46,6 @@ main{
             .hdtjB{
                 border-top: 2px solid #ee124b;
                 .active{background-color: rgb(166,72,159);}
-                }
                 
             }
         }
@@ -116,6 +115,72 @@ main{
                 }
             }
         }
+        #yingeryongpin{
+            .yeypT{
+                i{background: url("../img/04.png");}
+                span{color: #e93f06;}
+            }
+            .yeypB{
+                border-top: 2px solid #e93f06;
+                .active{background-color: #e93f06;}
+                
+            }
+        }
+        #meizhuang{
+            .mzT{
+                i{background: url("../img/05.png");}
+                span{color: #ff0099;}
+            }
+            .mzB{
+                border-top: 2px solid #ff0099;
+                .active{background-color: #ff0099;}
+                
+            }
+        }
+        #jiajurihua{
+            .jjrhT{
+                i{background: url("../img/06.png");}
+                span{color: #1e8f53;}
+            }
+            .jjrhB{
+                border-top: 2px solid #1e8f53;
+                .active{background-color: #1e8f53;}
+                
+            }
+        }
+        #shumadianzi{
+            .smdzT{
+                i{background: url("../img/07.png");}
+                span{color: #343d74;}
+            }
+            .smdzB{
+                border-top: 2px solid #343d74;
+                .active{background-color: #343d74;}
+                
+            }
+        }
+        #xiangbaoshoushi{
+            .xbssT{
+                i{background: url("../img/08.png");}
+                span{color: #663000;}
+            }
+            .xbssB{
+                border-top: 2px solid #663000;
+                .active{background-color: #663000;}
+                
+            }
+        }
+        #chengrenyongpin{
+            .crypT{
+                i{background: url("../img/09.png");}
+                span{color: #313b74;}
+            }
+            .crypB{
+                border-top: 2px solid #313b74;
+                .active{background-color: #313b74;}
+                
+            }
+        }
         .floor{
             height: 491px;margin-top: 20px;
             .floorT{
@@ -124,7 +189,7 @@ main{
                     display:inline-block;width: 30px;height: 38px;line-height: 36px;margin-right: 15px;
                 }
                 span{
-                    font-size: 18px;line-height: 38px;display: inline-block;vertical-align: bottom;color: #ee124b;
+                    font-size: 18px;line-height: 38px;display: inline-block;vertical-align: bottom;
                 }
             }
             .floorB{
@@ -151,6 +216,7 @@ main{
                             width: 449px;
                     }
                 }
+            }
         }
     }
 }

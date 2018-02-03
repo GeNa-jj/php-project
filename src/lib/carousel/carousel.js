@@ -5,7 +5,7 @@
             index:0,
             width:400,
             height:260,
-            duration:3000,
+            duration:5000,
             autoPlay:true,
             page:true,
             seamless:true,

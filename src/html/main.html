@@ -145,14 +145,8 @@
                                 var $inbaosuiqu = $('.inbaosuiqu');
                                 $bsq_tab.on('mouseenter','li',function(){
                                     var idx = $(this).index();
-                                    if(idx==1){
-                                        $(this).addClass('active').siblings().removeClass('active');
-                                        $inbaosuiqu.eq(idx).css('display','block').siblings('div').css('display','none');  
-                                    }else{
-                                        $(this).addClass('active').siblings().removeClass('active');
-                                        $inbaosuiqu.eq(idx).css('display','block').siblings('div').css('display','none');
-                                            
-                                    }
+                                    $(this).addClass('active').css('cursor','pointer').siblings().removeClass('active');
+                                    $inbaosuiqu.eq(idx).css('display','block').siblings('div').css('display','none');
                                 });
                                 $('.bsq_1L').carousel({
                                     width:299,
@@ -232,14 +226,8 @@
                             var $inshipinbaojian = $('.inshipinbaojian');
                             $spbj_tab.on('mouseenter','li',function(){
                                 var idx = $(this).index();
-                                if(idx==1){
-                                    $(this).addClass('active').siblings().removeClass('active');
-                                    $inshipinbaojian.eq(idx).css('display','block').siblings('div').css('display','none');  
-                                }else{
-                                    $(this).addClass('active').siblings().removeClass('active');
-                                    $inshipinbaojian.eq(idx).css('display','block').siblings('div').css('display','none');
-                                        
-                                }
+                                $(this).addClass('active').css('cursor','pointer').siblings().removeClass('active');
+                                $inshipinbaojian.eq(idx).css('display','block').siblings('div').css('display','none');  
                             });
                             $('.spbj_1L').carousel({
                                 width:299,
@@ -262,6 +250,183 @@
                         });
                     </script>
                 </div>
+            </div>
+            <div id="yingeryongpin" class="floor">
+                <div class="yeypT floorT">
+                    <i></i>
+                    <span>婴儿用品</span>
+                </div>
+                <div class="yeypB floorB">
+                    <div class="yeypBL floorBL"></div>
+                    <div class="floorBR">
+                        <ul>
+                            <li><a href="#"><img src="../img/yeyp_b1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/yeyp_b2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/yeyp_b3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/yeyp_b4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/yeyp_b5.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/yeyp_b6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('.yeypBL').carousel({
+                            width:299,
+                            height:451,
+                            pn:false,
+                            autoPlay:false,
+                            imgs:['../img/yeyp_a1.jpg']
+                        });
+                    })
+                </script>
+            </div>
+            <div id="meizhuang" class="floor">
+                <div class="mzT floorT">
+                    <i></i>
+                    <span>美妆个护</span>
+                </div>
+                <div class="mzB floorB">
+                    <div class="mzBL floorBL"></div>
+                    <div class="floorBR">
+                        <ul>
+                            <li><a href="#"><img src="../img/mz_b1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/mz_b2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/mz_b3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/mz_b4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/mz_b5.png" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/mz_b6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('.mzBL').carousel({
+                            width:299,
+                            height:451,
+                            pn:false,
+                            imgs:['../img/mz_a1.jpg','../img/mz_a2.jpg']
+                        });
+                    })
+                </script>
+            </div>
+            <div id="jiajurihua" class="floor">
+                <div class="jjrhT floorT">
+                    <i></i>
+                    <span>家具日化</span>
+                </div>
+                <div class="jjrhB floorB">
+                    <div class="jjrhBL floorBL"></div>
+                    <div class="floorBR">
+                        <ul>
+                            <li><a href="#"><img src="../img/jjrh_b1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/jjrh_b2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/jjrh_b3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/jjrh_b4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/jjrh_b5.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/jjrh_b6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('.jjrhBL').carousel({
+                            width:299,
+                            height:451,
+                            pn:false,
+                            imgs:['../img/jjrh_a1.jpg','../img/jjrh_a2.jpg']
+                        });
+                    })
+                </script>
+            </div>
+            <div id="shumadianzi" class="floor">
+                <div class="smdzT floorT">
+                    <i></i>
+                    <span>数码电子</span>
+                </div>
+                <div class="smdzB floorB">
+                    <div class="smdzBL floorBL"></div>
+                    <div class="floorBR">
+                        <ul>
+                            <li><a href="#"><img src="../img/smdz_b1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/smdz_b2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/smdz_b3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/smdz_b4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/smdz_b5.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/smdz_b6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('.smdzBL').carousel({
+                            width:299,
+                            height:451,
+                            pn:false,
+                            autoPlay:false,
+                            imgs:['../img/smdz_a1.jpg']
+                        });
+                    })
+                </script>
+            </div>
+            <div id="xiangbaoshoushi" class="floor">
+                <div class="xbssT floorT">
+                    <i></i>
+                    <span>家具日化</span>
+                </div>
+                <div class="xbssB floorB">
+                    <div class="xbssBL floorBL"></div>
+                    <div class="floorBR">
+                        <ul>
+                            <li><a href="#"><img src="../img/xbss_b1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/xbss_b2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/xbss_b3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/xbss_b4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/xbss_b5.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/xbss_b6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('.xbssBL').carousel({
+                            width:299,
+                            height:451,
+                            pn:false,
+                            imgs:['../img/xbss_a1.jpg','../img/xbss_a2.jpg']
+                        });
+                    })
+                </script>
+            </div>
+            <div id="chengrenyongpin" class="floor">
+                <div class="crypT floorT">
+                    <i></i>
+                    <span>数码电子</span>
+                </div>
+                <div class="crypB floorB">
+                    <div class="crypBL floorBL"></div>
+                    <div class="floorBR">
+                        <ul>
+                            <li><a href="#"><img src="../img/cryp_b1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/cryp_b2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/cryp_b3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/cryp_b4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/cryp_b5.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../img/cryp_b6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('.crypBL').carousel({
+                            width:299,
+                            height:451,
+                            pn:false,
+                            autoPlay:false,
+                            imgs:['../img/cryp_a1.jpg']
+                        });
+                    })
+                </script>
             </div>
         </div>
     </main>

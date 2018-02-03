@@ -3,7 +3,8 @@ main {
 }
 
 main .container {
-  height: 5070px;
+  height: 5190px;
+  padding-bottom: 120px;
 }
 
 main .container .hotSales {
@@ -117,24 +118,24 @@ main .container #huodongtuijian .hdtjB .active {
   background-color: #a6489f;
 }
 
-main #baosuiqu {
+main .container #baosuiqu {
   height: 497px;
 }
 
-main #baosuiqu .baosuiquT i {
+main .container #baosuiqu .baosuiquT i {
   background: url("../img/02.png");
 }
 
-main #baosuiqu .baosuiquT span {
+main .container #baosuiqu .baosuiquT span {
   color: #0099cc;
 }
 
-main #baosuiqu .baosuiquT ul {
+main .container #baosuiqu .baosuiquT ul {
   float: right;
   height: 38px;
 }
 
-main #baosuiqu .baosuiquT ul li {
+main .container #baosuiqu .baosuiquT ul li {
   font-size: 18px;
   float: left;
   height: 34px;
@@ -150,7 +151,7 @@ main #baosuiqu .baosuiquT ul li {
   top: 4px;
 }
 
-main #baosuiqu .baosuiquT ul .active {
+main .container #baosuiqu .baosuiquT ul .active {
   white-space: nowrap;
   border: solid 2px #0099cc;
   border-bottom: 0 none;
@@ -160,37 +161,37 @@ main #baosuiqu .baosuiquT ul .active {
   color: #c81623;
 }
 
-main #baosuiqu .baosuiquB {
+main .container #baosuiqu .baosuiquB {
   height: 459px;
   padding-top: 6px;
 }
 
-main #baosuiqu .baosuiquB .baosuiquBB {
+main .container #baosuiqu .baosuiquB .baosuiquBB {
   border-top: 2px solid #0099cc;
 }
 
-main #baosuiqu .baosuiquB .baosuiquBB .active {
+main .container #baosuiqu .baosuiquB .baosuiquBB .active {
   background-color: #258abd;
 }
 
-main #shipinbaojian {
+main .container #shipinbaojian {
   height: 497px;
 }
 
-main #shipinbaojian .shipinbaojianT i {
+main .container #shipinbaojian .shipinbaojianT i {
   background: url("../img/03.png");
 }
 
-main #shipinbaojian .shipinbaojianT span {
+main .container #shipinbaojian .shipinbaojianT span {
   color: #009900;
 }
 
-main #shipinbaojian .shipinbaojianT ul {
+main .container #shipinbaojian .shipinbaojianT ul {
   float: right;
   height: 38px;
 }
 
-main #shipinbaojian .shipinbaojianT ul li {
+main .container #shipinbaojian .shipinbaojianT ul li {
   font-size: 18px;
   float: left;
   height: 34px;
@@ -206,7 +207,7 @@ main #shipinbaojian .shipinbaojianT ul li {
   top: 4px;
 }
 
-main #shipinbaojian .shipinbaojianT ul .active {
+main .container #shipinbaojian .shipinbaojianT ul .active {
   white-space: nowrap;
   border: solid 2px #0099cc;
   border-bottom: 0 none;
@@ -216,29 +217,125 @@ main #shipinbaojian .shipinbaojianT ul .active {
   color: #c81623;
 }
 
-main #shipinbaojian .shipinbaojianB {
+main .container #shipinbaojian .shipinbaojianB {
   height: 459px;
   padding-top: 6px;
 }
 
-main #shipinbaojian .shipinbaojianB .shipinbaojianBB {
+main .container #shipinbaojian .shipinbaojianB .shipinbaojianBB {
   border-top: 2px solid #009900;
 }
 
-main #shipinbaojian .shipinbaojianB .shipinbaojianBB .active {
+main .container #shipinbaojian .shipinbaojianB .shipinbaojianBB .active {
   background-color: #5aae57;
 }
 
-main .floor {
+main .container #yingeryongpin .yeypT i {
+  background: url("../img/04.png");
+}
+
+main .container #yingeryongpin .yeypT span {
+  color: #e93f06;
+}
+
+main .container #yingeryongpin .yeypB {
+  border-top: 2px solid #e93f06;
+}
+
+main .container #yingeryongpin .yeypB .active {
+  background-color: #e93f06;
+}
+
+main .container #meizhuang .mzT i {
+  background: url("../img/05.png");
+}
+
+main .container #meizhuang .mzT span {
+  color: #ff0099;
+}
+
+main .container #meizhuang .mzB {
+  border-top: 2px solid #ff0099;
+}
+
+main .container #meizhuang .mzB .active {
+  background-color: #ff0099;
+}
+
+main .container #jiajurihua .jjrhT i {
+  background: url("../img/06.png");
+}
+
+main .container #jiajurihua .jjrhT span {
+  color: #1e8f53;
+}
+
+main .container #jiajurihua .jjrhB {
+  border-top: 2px solid #1e8f53;
+}
+
+main .container #jiajurihua .jjrhB .active {
+  background-color: #1e8f53;
+}
+
+main .container #shumadianzi .smdzT i {
+  background: url("../img/07.png");
+}
+
+main .container #shumadianzi .smdzT span {
+  color: #343d74;
+}
+
+main .container #shumadianzi .smdzB {
+  border-top: 2px solid #343d74;
+}
+
+main .container #shumadianzi .smdzB .active {
+  background-color: #343d74;
+}
+
+main .container #xiangbaoshoushi .xbssT i {
+  background: url("../img/08.png");
+}
+
+main .container #xiangbaoshoushi .xbssT span {
+  color: #663000;
+}
+
+main .container #xiangbaoshoushi .xbssB {
+  border-top: 2px solid #663000;
+}
+
+main .container #xiangbaoshoushi .xbssB .active {
+  background-color: #663000;
+}
+
+main .container #chengrenyongpin .crypT i {
+  background: url("../img/09.png");
+}
+
+main .container #chengrenyongpin .crypT span {
+  color: #313b74;
+}
+
+main .container #chengrenyongpin .crypB {
+  border-top: 2px solid #313b74;
+}
+
+main .container #chengrenyongpin .crypB .active {
+  background-color: #313b74;
+}
+
+main .container .floor {
   height: 491px;
   margin-top: 20px;
 }
 
-main .floor .floorT {
+main .container .floor .floorT {
   height: 38px;
 }
 
-main .floor .floorT i {
+main .container .floor .floorT i {
   display: inline-block;
   width: 30px;
   height: 38px;
@@ -246,19 +343,18 @@ main .floor .floorT i {
   margin-right: 15px;
 }
 
-main .floor .floorT span {
+main .container .floor .floorT span {
   font-size: 18px;
   line-height: 38px;
   display: inline-block;
   vertical-align: bottom;
-  color: #ee124b;
 }
 
-main .floor .floorB {
+main .container .floor .floorB {
   height: 453px;
 }
 
-main .floor .floorB .floorBL {
+main .container .floor .floorB .floorBL {
   float: left;
   width: 299px;
   height: 451px;
@@ -268,29 +364,29 @@ main .floor .floorB .floorBL {
   overflow: hidden;
 }
 
-main .floor .floorB .floorBL ul {
+main .container .floor .floorB .floorBL ul {
   position: absolute;
   overflow: hidden;
 }
 
-main .floor .floorB .floorBL li {
+main .container .floor .floorB .floorBL li {
   float: left;
 }
 
-main .floor .floorB .floorBL img {
+main .container .floor .floorB .floorBL img {
   width: 299px;
   height: 451px;
   display: block;
 }
 
-main .floor .floorB .floorBL .page {
+main .container .floor .floorB .floorBL .page {
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 0);
 }
 
-main .floor .floorB .floorBL .page span {
+main .container .floor .floorB .floorBL .page span {
   display: inline-block;
   margin: 0 5px;
   width: 10px;
@@ -305,17 +401,17 @@ main .floor .floorB .floorBL .page span {
   cursor: pointer;
 }
 
-main .floor .floorB .floorBL .page .active {
+main .container .floor .floorB .floorBL .page .active {
   background-color: #a6489f;
 }
 
-main .floor .floorB .floorBR {
+main .container .floor .floorB .floorBR {
   float: left;
   width: 901px;
   height: 451px;
 }
 
-main .floor .floorB .floorBR li {
+main .container .floor .floorB .floorBR li {
   float: left;
   width: 224px;
   height: 224px;
@@ -326,6 +422,6 @@ main .floor .floorB .floorBR li {
   display: inline-block;
 }
 
-main .floor .floorB .floorBR li:nth-child(1), main .floor .floorB .floorBR li:nth-child(6) {
+main .container .floor .floorB .floorBR li:nth-child(1), main .container .floor .floorB .floorBR li:nth-child(6) {
   width: 449px;
 }
