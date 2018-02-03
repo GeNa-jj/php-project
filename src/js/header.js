@@ -46,6 +46,5 @@ jQuery(function($){
     }).mouseleave(function(event) {
         $navMenu2.css('display','none');
         $navMenu3.eq(idx).css('display','none');
-    });;
-
+    });             
 });

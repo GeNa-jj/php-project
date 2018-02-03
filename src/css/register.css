@@ -57,13 +57,14 @@
   color: #FFF;
   font-size: 17px;
   color: #666;
+  cursor: pointer;
 }
 
 #reg .container .regL .regLB p a {
   float: right;
   font-size: 12px;
   margin-top: 10px;
-  margin-right: 70px;
+  margin-right: 90px;
 }
 
 #reg .container .regL .regLB div {
@@ -91,7 +92,7 @@
 }
 
 #reg .container .regR .regRT {
-  text-align: center;
+  margin-left: 230px;
   font-size: 24px;
   color: #999;
   margin-top: 15px;
@@ -100,7 +101,7 @@
 
 #reg .container .regR ul {
   display: block;
-  padding-left: 220px;
+  padding-left: 180px;
   margin-top: 10px;
 }
 
@@ -122,6 +123,145 @@
 
 #reg .container .regR .email, #reg .container .regR .tel {
   height: 492px;
-  background-color: #ccc;
   margin-top: 15px;
+}
+
+#reg .container .regR .email p, #reg .container .regR .tel p {
+  height: 67px;
+}
+
+#reg .container .regR .email p label, #reg .container .regR .tel p label {
+  text-align: right;
+  width: 140px;
+  float: left;
+  padding: 10px 3px 15px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
+}
+
+#reg .container .regR .email p input, #reg .container .regR .tel p input {
+  width: 332px;
+  height: 32px;
+  line-height: 30px;
+  background-color: #FFF;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  color: #666;
+  font-size: 15px;
+}
+
+#reg .container .regR .email p span, #reg .container .regR .tel p span {
+  height: 20px;
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+
+#reg .container .regR .email p button, #reg .container .regR .tel p button {
+  height: 34px;
+  width: 320px;
+  background-color: #FFF;
+  text-align: center;
+  margin-left: 145px;
+  line-height: 34px;
+  border: 1px solid #CCC;
+  color: #FFF;
+  font-size: 17px;
+  color: #666;
+  cursor: pointer;
+}
+
+#reg .container .regR .email p:nth-child(4) {
+  height: 47px;
+}
+
+#reg .container .regR .email p:nth-child(6) input {
+  width: 122px;
+}
+
+#reg .container .regR .email p:nth-child(6) span {
+  display: inline-block;
+}
+
+#reg .container .regR .email p:nth-child(6) .yzm1 {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#reg .container .regR .email p:nth-child(6) .yzm1_change:hover {
+  cursor: pointer;
+  color: #FF3300;
+}
+
+#reg .container .regR .email .xieyi {
+  height: 56px;
+  padding-left: 130px;
+}
+
+#reg .container .regR .email .xieyi input {
+  width: 40px;
+  height: 25px;
+  outline: none;
+  border: 0px;
+  float: left;
+}
+
+#reg .container .regR .email .xieyi span {
+  vertical-align: bottom;
+  display: inline-block;
+  line-height: 25px;
+}
+
+#reg .container .regR .tel p:nth-child(3) {
+  height: 47px;
+}
+
+#reg .container .regR .tel p:nth-child(4) input {
+  width: 122px;
+}
+
+#reg .container .regR .tel p:nth-child(4) span {
+  display: inline-block;
+}
+
+#reg .container .regR .tel p:nth-child(4) .yzm2 {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#reg .container .regR .tel p:nth-child(4) .yzm2_change:hover {
+  cursor: pointer;
+  color: #FF3300;
+}
+
+#reg .container .regR .tel p:nth-child(5) input {
+  width: 122px;
+}
+
+#reg .container .regR .tel p:nth-child(5) .a1 {
+  display: inline-block;
+  margin: 0 10px;
+  color: #000;
+}
+
+#reg .container .regR .tel .xieyi {
+  height: 56px;
+  padding-left: 130px;
+}
+
+#reg .container .regR .tel .xieyi input {
+  width: 40px;
+  height: 25px;
+  outline: none;
+  border: 0px;
+  float: left;
+}
+
+#reg .container .regR .tel .xieyi span {
+  vertical-align: bottom;
+  display: inline-block;
+  line-height: 25px;
 }

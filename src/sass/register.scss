@@ -17,10 +17,10 @@
                             width: 332px;height: 32px;line-height: 30px;background-color: #FFF;border: 1px solid #ccc;padding-left: 20px;color: #666;font-size: 15px;
                     }
                     button{
-                        height: 34px;width: 320px;background-color: #FFF;text-align: center;margin-left: 145px;line-height: 34px;border: 1px solid #CCC;color: #FFF;font-size: 17px;color: #666;
+                        height: 34px;width: 320px;background-color: #FFF;text-align: center;margin-left: 145px;line-height: 34px;border: 1px solid #CCC;color: #FFF;font-size: 17px;color: #666;cursor: pointer;
                     }
                     a{
-                        float: right;font-size: 12px;margin-top: 10px;margin-right: 70px;  
+                        float: right;font-size: 12px;margin-top: 10px;margin-right: 90px;  
                     }
                 }
                 div{
@@ -33,10 +33,10 @@
         .regR{
             width: 640px;height: 717px;float: left;
             .regRT{
-                text-align: center;font-size: 24px;color: #999;margin-top: 15px;padding-bottom: 5px;
+                margin-left: 230px;font-size: 24px;color: #999;margin-top: 15px;padding-bottom: 5px;
             }
             ul{
-                display: block;padding-left: 220px;margin-top: 10px;
+                display: block;padding-left: 180px;margin-top: 10px;
                 li{
                     width: 100px;float: left;line-height: 30px;border: 1px solid #ddd;text-align: center;font-size: 12px;color: #666;
                 }
@@ -45,7 +45,80 @@
                 }
             }
             .email,.tel{
-                height: 492px;background-color: #ccc;margin-top: 15px;
+                height: 492px;margin-top: 15px;
+                p{
+                    height: 67px;
+                    label{
+                        text-align: right;width: 140px;float: left;padding: 10px 3px 15px 10px;font-size: 12px;line-height: 12px;color: #666;
+                    }
+                    input{
+                        width: 332px;height: 32px;line-height: 30px;background-color: #FFF;border: 1px solid #ccc;padding-left: 20px;color: #666;font-size: 15px;
+                    }
+                    span{
+                        height: 20px;display:block;font-size: 12px;color:#666;
+                    }
+                    button{
+                        height: 34px;width: 320px;background-color: #FFF;text-align: center;margin-left: 145px;line-height: 34px;border: 1px solid #CCC;color: #FFF;font-size: 17px;color: #666;cursor: pointer;
+                    }
+                }
+            }
+            .email{
+                p:nth-child(4){
+                    height: 47px;
+                }
+                p:nth-child(6){
+                    input{
+                        width: 122px;
+                    }
+                    span{
+                        display:inline-block;
+                    }
+                    .yzm1{margin: 0 20px;font-size: 18px;font-weight: bold
+                    ;}
+                    .yzm1_change:hover{
+                        cursor: pointer;color: #FF3300;
+                    }
+                }
+                .xieyi{
+                    height: 56px;padding-left: 130px;
+                    input{
+                            width: 40px;height: 25px;outline: none;border: 0px;float: left;
+                    }
+                    span{vertical-align: bottom;display:inline-block;line-height: 25px;}
+                }
+            }
+            .tel{
+                p:nth-child(3){
+                    height: 47px;
+                }
+                p:nth-child(4){
+                    input{
+                        width: 122px;
+                    }
+                    span{
+                        display:inline-block;
+                    }
+                    .yzm2{margin: 0 20px;font-size: 18px;font-weight: bold
+                    ;}
+                    .yzm2_change:hover{
+                        cursor: pointer;color: #FF3300;
+                    }
+                }
+                p:nth-child(5){
+                    input{
+                        width: 122px;
+                    }
+                    .a1{
+                        display:inline-block;margin: 0 10px;color:#000;
+                    }
+                }
+                .xieyi{
+                    height: 56px;padding-left: 130px;
+                    input{
+                            width: 40px;height: 25px;outline: none;border: 0px;float: left;
+                    }
+                    span{vertical-align: bottom;display:inline-block;line-height: 25px;}
+                }
             }
         }
     }

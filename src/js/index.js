@@ -1,9 +1,11 @@
 require(['config'],function(){
-    require(['jquery','carousel','header','common'],function($){
+    require(['jquery','carousel','common'],function($){
         //导入头部/尾部
-        $('header').load('../html/header.html');
+        $('header').load('../html/header.html',function(){
+            require(['header']);
+        });
         $('footer').load('../html/footer.html');
-        //banner
+        //banner    
         (function(){
             var $box = $('.bannerL');
             $box.carousel({
