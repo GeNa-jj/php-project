@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8" />
     <title>登录注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
 </head>
 <body>
-    
+    <div id="reg">
+        <div class="container">
+            <div class="regL">
+                <div class="regLT">登录</div>
+                <div class="regLB">
+                    <p>
+                        <label for="name">账号：</label>
+                        <input type="text" id="name" placeholder="邮箱/手机/用户名"/>   
+                    </p>
+                    <p>
+                        <label for="password">密码：</label>
+                        <input type="password" id="password" /> 
+                    </p>
+                    <p>
+                        <button>登录</button>
+                    </p>
+                    <p><a href="#">忘记密码？</a></p>
+                    <div>
+                        <p>其他登录方式：</p>
+                        <div>
+                            <a href="#"><img src="../img/zfbdl.gif" height="33" width="145" alt="" /></a>
+                            <a href="#"><img src="../img/qqdl.png" height="32" width="170" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="regR">
+                <div class="regRT">免费注册</div>
+                <ul class="clearfix">
+                    <li class="selected" style="border-radius: 8px 0px 0px 8px; border-right: none;">邮箱注册</li>
+                    <li style="border-radius: 0px 8px 8px 0px; border-left: none;">手机号注册</li>
+                </ul>
+                <div class="email">
+                    <p>
+                        <label for="eml">请填写您的Email地址：</label>
+                        <input type="text" id="eml" /> 
+                        <p>登录账号,请认真填写。</p>
+                        <p style="display:none;">邮箱帐号不能为空!</p>  
+                    </p>
+                    <p>
+                        <label for="name1">昵称：</label>
+                        <input type="text" id="name1" /> 
+                        <p>3~10个字符,只含有汉字、数字、字母、_</p>
+
+                    </p>
+                    <p>
+                        <label for="psw1">请输入密码：</label>
+                        <input type="password" id="psw1" /> 
+                        <p>6~16位字符,只能包含字母,数字或下划线</p>
+                        <p>请输入密码</p>
+                    </p>
+                    <p>
+                        <label for="psw2">请再次输入密码：</label>
+                        <input type="password" id="psw2" /> 
+                    </p>
+                    <p>
+                        <label for="psw1">从何处得知我们网站：</label>
+                        <input type="password" id="psw1" /> 
+                        <p>从何处得知或推荐人登录邮箱。</p>
+                    </p>
+                </div>
+                <div class="tel" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

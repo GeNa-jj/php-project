@@ -1,0 +1,127 @@
+#reg .container {
+  height: 717px;
+}
+
+#reg .container .regL {
+  width: 560px;
+  height: 717px;
+  float: left;
+}
+
+#reg .container .regL .regLT {
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  margin-top: 15px;
+  padding-bottom: 5px;
+}
+
+#reg .container .regL .regLB {
+  height: 195;
+  margin-top: 30px;
+}
+
+#reg .container .regL .regLB p {
+  height: 47px;
+}
+
+#reg .container .regL .regLB p label {
+  text-align: right;
+  width: 140px;
+  float: left;
+  padding: 10px 3px 15px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
+}
+
+#reg .container .regL .regLB p input {
+  width: 332px;
+  height: 32px;
+  line-height: 30px;
+  background-color: #FFF;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  color: #666;
+  font-size: 15px;
+}
+
+#reg .container .regL .regLB p button {
+  height: 34px;
+  width: 320px;
+  background-color: #FFF;
+  text-align: center;
+  margin-left: 145px;
+  line-height: 34px;
+  border: 1px solid #CCC;
+  color: #FFF;
+  font-size: 17px;
+  color: #666;
+}
+
+#reg .container .regL .regLB p a {
+  float: right;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 70px;
+}
+
+#reg .container .regL .regLB div {
+  height: 105px;
+}
+
+#reg .container .regL .regLB div p {
+  font-size: 12px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 120px;
+  color: #666;
+}
+
+#reg .container .regL .regLB div div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#reg .container .regR {
+  width: 640px;
+  height: 717px;
+  float: left;
+}
+
+#reg .container .regR .regRT {
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  margin-top: 15px;
+  padding-bottom: 5px;
+}
+
+#reg .container .regR ul {
+  display: block;
+  padding-left: 220px;
+  margin-top: 10px;
+}
+
+#reg .container .regR ul li {
+  width: 100px;
+  float: left;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+#reg .container .regR ul .selected {
+  background: #EC8D36;
+  color: #fff;
+  border: solid 1px #EC8D36;
+}
+
+#reg .container .regR .email, #reg .container .regR .tel {
+  height: 492px;
+  background-color: #ccc;
+  margin-top: 15px;
+}

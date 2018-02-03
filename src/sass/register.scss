@@ -1,0 +1,52 @@
+#reg{
+    .container{
+        height: 717px;
+        .regL{
+            width: 560px;height: 717px;float: left;
+            .regLT{
+                text-align: center;font-size: 24px;color: #999;margin-top: 15px;padding-bottom: 5px;
+            }
+            .regLB{
+                height: 195;margin-top: 30px;
+                p{
+                    height: 47px;
+                    label{
+                        text-align: right;width: 140px;float: left;padding: 10px 3px 15px 10px;font-size: 12px;line-height: 12px;color: #666;
+                    }
+                    input{
+                            width: 332px;height: 32px;line-height: 30px;background-color: #FFF;border: 1px solid #ccc;padding-left: 20px;color: #666;font-size: 15px;
+                    }
+                    button{
+                        height: 34px;width: 320px;background-color: #FFF;text-align: center;margin-left: 145px;line-height: 34px;border: 1px solid #CCC;color: #FFF;font-size: 17px;color: #666;
+                    }
+                    a{
+                        float: right;font-size: 12px;margin-top: 10px;margin-right: 70px;  
+                    }
+                }
+                div{
+                    height: 105px;
+                    p{font-size: 12px;font-weight: bold;height: 20px;line-height: 20px;padding-left: 120px;color: #666;}
+                    div{margin-top: 20px;text-align:center;}
+                }
+            }
+        }
+        .regR{
+            width: 640px;height: 717px;float: left;
+            .regRT{
+                text-align: center;font-size: 24px;color: #999;margin-top: 15px;padding-bottom: 5px;
+            }
+            ul{
+                display: block;padding-left: 220px;margin-top: 10px;
+                li{
+                    width: 100px;float: left;line-height: 30px;border: 1px solid #ddd;text-align: center;font-size: 12px;color: #666;
+                }
+                .selected{
+                    background: #EC8D36;color: #fff;border: solid 1px #EC8D36;
+                }
+            }
+            .email,.tel{
+                height: 492px;background-color: #ccc;margin-top: 15px;
+            }
+        }
+    }
+}
