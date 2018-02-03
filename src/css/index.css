@@ -1,0 +1,572 @@
+.banner {
+  background-color: #fcecda;
+}
+
+.banner .container {
+  height: 400px;
+}
+
+.banner .container .bannerL {
+  float: left;
+  margin-left: 190px;
+  width: 810px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .container .bannerL ul {
+  position: absolute;
+  overflow: hidden;
+}
+
+.banner .container .bannerL li {
+  float: left;
+}
+
+.banner .container .bannerL img {
+  width: 810px;
+  height: 400px;
+  display: block;
+}
+
+.banner .container .bannerL .page {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.banner .container .bannerL .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner .container .bannerL .page .active {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.banner .container .bannerL .zuo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 50px;
+  opacity: 0.8;
+  text-align: center;
+  display: none;
+  color: #fff;
+}
+
+.banner .container .bannerL .you {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 50px;
+  opacity: 0.8;
+  text-align: center;
+  display: none;
+  color: #fff;
+}
+
+.banner .container .bannerL .zuo:hover, .banner .container .bannerL .you:hover {
+  background-color: #fc0;
+  cursor: pointer;
+}
+
+.banner .container .bannerR {
+  float: left;
+  width: 200px;
+  height: 400px;
+  background-color: #fcecda;
+}
+
+.banner .container .bannerR .bannerRT {
+  width: 200px;
+  height: 200px;
+  background: url("../img/bannerR.png") no-repeat;
+}
+
+.banner .container .bannerR .bannerRB {
+  width: 200px;
+  height: 200px;
+  background: url("../img/zhibojian.png") no-repeat;
+}
+
+main {
+  background-color: #f5f5f5;
+}
+
+main .container {
+  height: 5190px;
+  padding-bottom: 120px;
+}
+
+main .container .hotSales {
+  height: 150px;
+}
+
+main .container .hotSales li {
+  float: left;
+  width: 252px;
+  border: 1px solid #efefef;
+  border-left: 0 none;
+  height: auto;
+  overflow: hidden;
+  height: 150px;
+  overflow: hidden;
+}
+
+main .container .hotSales li a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+main .container .hotSales .hot {
+  width: 190px;
+  border-right: 2px solid #efefef;
+}
+
+main .container .brandSales {
+  margin-top: 24px;
+  height: 284px;
+}
+
+main .container .brandSales a {
+  width: 300px;
+  height: 44px;
+  line-height: 44px;
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+main .container .brandSales span {
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+
+main .container .brandSales .brandSalesBL {
+  float: left;
+  width: 190px;
+  height: 238px;
+  background: url("../img/brandL.jpg");
+}
+
+main .container .brandSales .brandSalesBC {
+  float: left;
+}
+
+main .container .brandSales .brandSalesBC ul {
+  width: 812px;
+  height: 238px;
+  overflow: hidden;
+  border-top: 1px solid #efefef;
+  background-color: white;
+}
+
+main .container .brandSales .brandSalesBC ul li {
+  float: left;
+  width: 203px;
+  height: 79px;
+  overflow: hidden;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  position: relative;
+}
+
+main .container .brandSales .brandSalesBC ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+main .container .brandSales .brandSalesBC ul li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .container .brandSales .brandSalesBR {
+  float: left;
+  width: 198px;
+  height: 238px;
+  background: url("../img/brandR.jpg");
+}
+
+main .container #huodongtuijian .hdtjT i {
+  background: url("../img/01.png");
+}
+
+main .container #huodongtuijian .hdtjT span {
+  color: #ee124b;
+}
+
+main .container #huodongtuijian .hdtjB {
+  border-top: 2px solid #ee124b;
+}
+
+main .container #huodongtuijian .hdtjB .active {
+  background-color: #a6489f;
+}
+
+main .container #baosuiqu {
+  height: 497px;
+}
+
+main .container #baosuiqu .baosuiquT i {
+  background: url("../img/02.png");
+}
+
+main .container #baosuiqu .baosuiquT span {
+  color: #0099cc;
+}
+
+main .container #baosuiqu .baosuiquT ul {
+  float: right;
+  height: 38px;
+}
+
+main .container #baosuiqu .baosuiquT ul li {
+  font-size: 18px;
+  float: left;
+  height: 34px;
+  padding: 0 16px;
+  text-decoration: none;
+  line-height: 34px;
+  overflow: hidden;
+  background: #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+  white-space: nowrap;
+  position: relative;
+  top: 4px;
+}
+
+main .container #baosuiqu .baosuiquT ul .active {
+  white-space: nowrap;
+  border: solid 2px #0099cc;
+  border-bottom: 0 none;
+  top: 5px;
+  height: 33px;
+  line-height: 30px;
+  color: #c81623;
+}
+
+main .container #baosuiqu .baosuiquB {
+  height: 459px;
+  padding-top: 6px;
+}
+
+main .container #baosuiqu .baosuiquB .baosuiquBB {
+  border-top: 2px solid #0099cc;
+}
+
+main .container #baosuiqu .baosuiquB .baosuiquBB .active {
+  background-color: #258abd;
+}
+
+main .container #shipinbaojian {
+  height: 497px;
+}
+
+main .container #shipinbaojian .shipinbaojianT i {
+  background: url("../img/03.png");
+}
+
+main .container #shipinbaojian .shipinbaojianT span {
+  color: #009900;
+}
+
+main .container #shipinbaojian .shipinbaojianT ul {
+  float: right;
+  height: 38px;
+}
+
+main .container #shipinbaojian .shipinbaojianT ul li {
+  font-size: 18px;
+  float: left;
+  height: 34px;
+  padding: 0 16px;
+  text-decoration: none;
+  line-height: 34px;
+  overflow: hidden;
+  background: #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+  white-space: nowrap;
+  position: relative;
+  top: 4px;
+}
+
+main .container #shipinbaojian .shipinbaojianT ul .active {
+  white-space: nowrap;
+  border: solid 2px #0099cc;
+  border-bottom: 0 none;
+  top: 5px;
+  height: 33px;
+  line-height: 30px;
+  color: #c81623;
+}
+
+main .container #shipinbaojian .shipinbaojianB {
+  height: 459px;
+  padding-top: 6px;
+}
+
+main .container #shipinbaojian .shipinbaojianB .shipinbaojianBB {
+  border-top: 2px solid #009900;
+}
+
+main .container #shipinbaojian .shipinbaojianB .shipinbaojianBB .active {
+  background-color: #5aae57;
+}
+
+main .container #yingeryongpin .yeypT i {
+  background: url("../img/04.png");
+}
+
+main .container #yingeryongpin .yeypT span {
+  color: #e93f06;
+}
+
+main .container #yingeryongpin .yeypB {
+  border-top: 2px solid #e93f06;
+}
+
+main .container #yingeryongpin .yeypB .active {
+  background-color: #e93f06;
+}
+
+main .container #meizhuang .mzT i {
+  background: url("../img/05.png");
+}
+
+main .container #meizhuang .mzT span {
+  color: #ff0099;
+}
+
+main .container #meizhuang .mzB {
+  border-top: 2px solid #ff0099;
+}
+
+main .container #meizhuang .mzB .active {
+  background-color: #ff0099;
+}
+
+main .container #jiajurihua .jjrhT i {
+  background: url("../img/06.png");
+}
+
+main .container #jiajurihua .jjrhT span {
+  color: #1e8f53;
+}
+
+main .container #jiajurihua .jjrhB {
+  border-top: 2px solid #1e8f53;
+}
+
+main .container #jiajurihua .jjrhB .active {
+  background-color: #1e8f53;
+}
+
+main .container #shumadianzi .smdzT i {
+  background: url("../img/07.png");
+}
+
+main .container #shumadianzi .smdzT span {
+  color: #343d74;
+}
+
+main .container #shumadianzi .smdzB {
+  border-top: 2px solid #343d74;
+}
+
+main .container #shumadianzi .smdzB .active {
+  background-color: #343d74;
+}
+
+main .container #xiangbaoshoushi .xbssT i {
+  background: url("../img/08.png");
+}
+
+main .container #xiangbaoshoushi .xbssT span {
+  color: #663000;
+}
+
+main .container #xiangbaoshoushi .xbssB {
+  border-top: 2px solid #663000;
+}
+
+main .container #xiangbaoshoushi .xbssB .active {
+  background-color: #663000;
+}
+
+main .container #chengrenyongpin .crypT i {
+  background: url("../img/09.png");
+}
+
+main .container #chengrenyongpin .crypT span {
+  color: #313b74;
+}
+
+main .container #chengrenyongpin .crypB {
+  border-top: 2px solid #313b74;
+}
+
+main .container #chengrenyongpin .crypB .active {
+  background-color: #313b74;
+}
+
+main .container .floor {
+  height: 491px;
+  margin-top: 20px;
+}
+
+main .container .floor .floorT {
+  height: 38px;
+}
+
+main .container .floor .floorT i {
+  display: inline-block;
+  width: 30px;
+  height: 38px;
+  line-height: 36px;
+  margin-right: 15px;
+}
+
+main .container .floor .floorT span {
+  font-size: 18px;
+  line-height: 38px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+main .container .floor .floorB {
+  height: 453px;
+}
+
+main .container .floor .floorB .floorBL {
+  float: left;
+  width: 299px;
+  height: 451px;
+  overflow: hidden;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+main .container .floor .floorB .floorBL ul {
+  position: absolute;
+  overflow: hidden;
+}
+
+main .container .floor .floorB .floorBL li {
+  float: left;
+}
+
+main .container .floor .floorB .floorBL img {
+  width: 299px;
+  height: 451px;
+  display: block;
+}
+
+main .container .floor .floorB .floorBL .page {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+main .container .floor .floorB .floorBL .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+main .container .floor .floorB .floorBL .page .active {
+  background-color: #a6489f;
+}
+
+main .container .floor .floorB .floorBR {
+  float: left;
+  width: 901px;
+  height: 451px;
+}
+
+main .container .floor .floorB .floorBR li {
+  float: left;
+  width: 224px;
+  height: 224px;
+  background-color: #fff;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+main .container .floor .floorB .floorBR li:nth-child(1), main .container .floor .floorB .floorBR li:nth-child(6) {
+  width: 449px;
+}
+
+main .louti {
+  position: fixed;
+  left: 10px;
+  bottom: 50px;
+  z-index: 99999;
+  display: none;
+}
+
+main .louti li a {
+  font-weight: bold;
+  color: #999;
+  display: block;
+  background-color: #fff;
+  height: 39px;
+  width: 62px;
+  border: 1px solid #ddd;
+  border-bottom: 0 none;
+  text-align: center;
+  line-height: 20px;
+  padding: 0px 4px 0px 4px;
+  font-size: 12px;
+}
+
+main .louti li a:hover {
+  background-color: #ff3333;
+  color: #fff;
+}
+
+main .louti li .active {
+  background-color: #ff3333;
+  color: #fff;
+}

@@ -1,0 +1,13 @@
+require.config({
+    paths:{
+        'jquery':'../lib/jquery-3.2.1',
+        'carousel':'../lib/carousel/carousel'
+    },
+    shim:{
+        'carousel':{
+            deps:['jquery'],
+            exports:'jQuery.fn.carousel'
+        },
+        'header':['jquery']
+    }
+});

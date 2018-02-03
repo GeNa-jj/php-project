@@ -1,0 +1,264 @@
+.banner{
+    background-color: rgb(252,236,218);
+    .container{
+        height: 400px;
+        .bannerL{
+            float: left;margin-left: 190px;width: 810px;height: 400px;overflow: hidden; position: relative;
+            ul{position: absolute;overflow: hidden}
+            li{float: left;}
+            img{width: 810px;height: 400px;display: block;}
+            .page{
+                position:absolute;right:0;bottom:0;padding:10px;
+                span{
+                    display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);
+                }
+                .active{background-color: rgba(255,0,0,.8);}
+            }
+            .zuo{position: absolute;left: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
+            .you{position: absolute;right: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
+            .zuo:hover,.you:hover{background-color: #fc0;cursor: pointer;}
+        }
+        .bannerR{
+            float: left;width: 200px;height: 400px;background-color: rgb(252,236,218);
+            .bannerRT{
+                width: 200px;height: 200px;background: url("../img/bannerR.png") no-repeat;
+            }
+            .bannerRB{
+                width: 200px;height: 200px;background: url("../img/zhibojian.png") no-repeat;
+            }
+        }
+    }
+}
+main{
+    background-color: #f5f5f5;
+    .container{
+        height: 5190px;padding-bottom: 120px;
+        .hotSales{
+            height: 150px;
+            li{
+                float: left;width: 252px;border: 1px solid #efefef;border-left: 0 none;height: auto;overflow: hidden;height: 150px;overflow: hidden;
+                a{
+                    height: 100%;width: 100%;display: inline-block;
+                }
+            }
+            .hot{
+                width: 190px;border-right: 2px solid #efefef;
+            }
+        }
+        .brandSales{
+            margin-top: 24px;height: 284px;
+            a{
+                width: 300px;height: 44px;line-height: 44px;text-align: left;font-size: 18px;color: #000;font-weight: bold;
+            }
+            span{font-size: 14px;color: #000;font-weight: normal;}
+            .brandSalesBL{
+                float: left;width: 190px;height: 238px;background: url("../img/brandL.jpg");  
+            }
+            .brandSalesBC{
+                float: left;
+                ul{
+                    width: 812px;height: 238px;overflow: hidden;border-top: 1px solid #efefef;background-color: white;
+                    li{
+                        float: left;width: 203px;height: 79px;overflow: hidden;border-bottom: 1px solid #efefef;border-right: 1px solid #efefef;position: relative;
+                        a{display: inline-block;width: 100%;height: 100%;}
+                        img{position:absolute;left: 0;top: 0;}
+                    }
+                }
+            }
+            .brandSalesBR{
+                float: left;width: 198px;height: 238px;background: url("../img/brandR.jpg");
+            }  
+        }
+        #huodongtuijian{
+            .hdtjT{
+                i{background: url("../img/01.png");}
+                span{color: #ee124b;}
+            }
+            .hdtjB{
+                border-top: 2px solid #ee124b;
+                .active{background-color: rgb(166,72,159);}
+                
+            }
+        }
+        #baosuiqu{
+            height: 497px;
+            .baosuiquT{
+                i{background: url("../img/02.png");}
+                span{color: #0099cc;}
+                ul{
+                    float: right;height: 38px;
+                    li{
+                        font-size: 18px;float: left;height: 34px;padding: 0 16px;text-decoration: none;line-height: 34px;overflow: hidden;background: #fff;border-left: solid 2px #fff;border-right: solid 2px #fff;white-space: nowrap;position: relative;top: 4px;
+                    }
+                    .active{
+                        white-space: nowrap;
+                        border: solid 2px #0099cc;
+                        border-bottom: 0 none;
+                        top: 5px;
+                        height: 33px;
+                        line-height: 30px;
+                        color: #c81623;
+                    }
+                    
+                }
+            }
+            .baosuiquB{
+                height: 459px;padding-top: 6px;
+                .baosuiquBB{
+                    border-top: 2px solid #0099cc;
+                    
+                    .active{
+                        background-color: #258abd;
+                    }      
+                }
+            }
+        }
+        #shipinbaojian{
+            height: 497px;
+            .shipinbaojianT{
+                i{background: url("../img/03.png");}
+                span{color: #009900;}
+                ul{
+                    float: right;height: 38px;
+                    li{
+                        font-size: 18px;float: left;height: 34px;padding: 0 16px;text-decoration: none;line-height: 34px;overflow: hidden;background: #fff;border-left: solid 2px #fff;border-right: solid 2px #fff;white-space: nowrap;position: relative;top: 4px;
+                    }
+                    .active{
+                        white-space: nowrap;
+                        border: solid 2px #0099cc;
+                        border-bottom: 0 none;
+                        top: 5px;
+                        height: 33px;
+                        line-height: 30px;
+                        color: #c81623;
+                    }
+                    
+                }
+            }
+            .shipinbaojianB{
+                height: 459px;padding-top: 6px;
+                .shipinbaojianBB{
+                    border-top: 2px solid #009900;
+                    
+                    .active{
+                        background-color: #5aae57;
+                    }      
+                }
+            }
+        }
+        #yingeryongpin{
+            .yeypT{
+                i{background: url("../img/04.png");}
+                span{color: #e93f06;}
+            }
+            .yeypB{
+                border-top: 2px solid #e93f06;
+                .active{background-color: #e93f06;}
+                
+            }
+        }
+        #meizhuang{
+            .mzT{
+                i{background: url("../img/05.png");}
+                span{color: #ff0099;}
+            }
+            .mzB{
+                border-top: 2px solid #ff0099;
+                .active{background-color: #ff0099;}
+                
+            }
+        }
+        #jiajurihua{
+            .jjrhT{
+                i{background: url("../img/06.png");}
+                span{color: #1e8f53;}
+            }
+            .jjrhB{
+                border-top: 2px solid #1e8f53;
+                .active{background-color: #1e8f53;}
+                
+            }
+        }
+        #shumadianzi{
+            .smdzT{
+                i{background: url("../img/07.png");}
+                span{color: #343d74;}
+            }
+            .smdzB{
+                border-top: 2px solid #343d74;
+                .active{background-color: #343d74;}
+                
+            }
+        }
+        #xiangbaoshoushi{
+            .xbssT{
+                i{background: url("../img/08.png");}
+                span{color: #663000;}
+            }
+            .xbssB{
+                border-top: 2px solid #663000;
+                .active{background-color: #663000;}
+                
+            }
+        }
+        #chengrenyongpin{
+            .crypT{
+                i{background: url("../img/09.png");}
+                span{color: #313b74;}
+            }
+            .crypB{
+                border-top: 2px solid #313b74;
+                .active{background-color: #313b74;}
+                
+            }
+        }
+        .floor{
+            height: 491px;margin-top: 20px;
+            .floorT{
+                height: 38px;
+                i{
+                    display:inline-block;width: 30px;height: 38px;line-height: 36px;margin-right: 15px;
+                }
+                span{
+                    font-size: 18px;line-height: 38px;display: inline-block;vertical-align: bottom;
+                }
+            }
+            .floorB{
+                height: 453px;
+                .floorBL{
+                    float: left;width: 299px;height: 451px;overflow: hidden;background-color: #ccc;position: relative;overflow: hidden;
+                    ul{position: absolute;overflow: hidden}
+                    li{float: left;}
+                    img{width: 299px;height: 451px;display: block;}
+                    .page{
+                        position:absolute;left: 50%;bottom:0;transform:translate(-50%,0);
+                        span{
+                            display:inline-block;margin:0 5px;width:10px;height:10px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);text-indent:-9999px;cursor: pointer;
+                        }
+                        .active{background-color: rgb(166,72,159);}
+                    }
+                }
+                .floorBR{
+                    float: left;width: 901px;height: 451px;
+                    li{
+                        float: left;width: 224px;height: 224px;background-color: #fff;margin-left: 1px;margin-bottom: 1px;position: relative;display: inline-block;
+                    }
+                    li:nth-child(1),li:nth-child(6){
+                            width: 449px;
+                    }
+                }
+            }
+        }
+    }
+    .louti{
+        position: fixed;left: 10px;bottom: 50px;z-index: 99999;display:none;
+        li{
+            a{
+                font-weight: bold;color: #999;display: block;background-color: #fff;height: 39px;width: 62px;border: 1px solid #ddd;border-bottom: 0 none;text-align: center;line-height: 20px;padding: 0px 4px 0px 4px;font-size: 12px;
+            }
+            a:hover{background-color: #ff3333;color: #fff;}
+            .active{background-color: #ff3333;color: #fff;}
+        }
+
+    }
+}

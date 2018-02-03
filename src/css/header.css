@@ -95,27 +95,27 @@
   background: url("../img/xiaotubiao.png") 10px -162px no-repeat;
 }
 
-header {
+#header {
   height: 160px;
   border-bottom: 2px solid #ff3333;
 }
 
-header .container {
+#header .container {
   height: 158px;
 }
 
-header .container .header {
+#header .container .header {
   height: 124px;
 }
 
-header .container .header .logo {
+#header .container .header .logo {
   width: 363px;
   height: 78px;
   float: left;
   padding: 18px 0 0 33px;
 }
 
-header .container .header .logo a {
+#header .container .header .logo a {
   display: block;
   width: 124px;
   height: 70px;
@@ -125,31 +125,31 @@ header .container .header .logo a {
   padding-bottom: 4px;
 }
 
-header .container .header .logo span {
+#header .container .header .logo span {
   display: block;
   width: 120px;
   height: 12px;
   background: url("../img/logobiaoyu.png") no-repeat 0 0;
 }
 
-header .container .header .search {
+#header .container .header .search {
   width: 470px;
   float: left;
   margin-top: 20px;
 }
 
-header .container .header .search .riyuanhuilv {
+#header .container .header .search .riyuanhuilv {
   line-height: 24px;
   font-size: 12px;
   color: #C70904;
 }
 
-header .container .header .search .searchTop {
+#header .container .header .search .searchTop {
   width: 470px;
   height: 40px;
 }
 
-header .container .header .search .searchTop .searchTopL {
+#header .container .header .search .searchTop .searchTopL {
   width: 360px;
   height: 40px;
   line-height: 40px;
@@ -159,7 +159,7 @@ header .container .header .search .searchTop .searchTopL {
   font: 12px/40px "Consolas";
 }
 
-header .container .header .search .searchTop .searchTopR {
+#header .container .header .search .searchTop .searchTopR {
   width: 110px;
   height: 40px;
   background: #ff3d3b;
@@ -169,7 +169,7 @@ header .container .header .search .searchTop .searchTopR {
   color: #fff;
 }
 
-header .container .header .search .searchLinks {
+#header .container .header .search .searchLinks {
   width: 468px;
   height: 20px;
   line-height: 20px;
@@ -177,7 +177,7 @@ header .container .header .search .searchLinks {
   color: #999;
 }
 
-header .container .header .search .searchLinks a {
+#header .container .header .search .searchLinks a {
   font-size: 12px;
   color: #999;
   display: inline-block;
@@ -187,22 +187,22 @@ header .container .header .search .searchLinks a {
   margin-top: 8px;
 }
 
-header .container .header .search .searchLinks a:hover {
+#header .container .header .search .searchLinks a:hover {
   color: #FF3B3B;
 }
 
-header .container .header .searchRight {
+#header .container .header .searchRight {
   float: right;
   width: 310px;
   height: 124px;
   background: url("../img/headerR.png") 0 48px no-repeat;
 }
 
-header .container nav {
+#header .container nav {
   height: 34px;
 }
 
-header .container nav #navAll {
+#header .container nav #navAll {
   float: left;
   display: block;
   width: 190px;
@@ -215,7 +215,7 @@ header .container nav #navAll {
   position: relative;
 }
 
-header .container nav #navAll .navMenu {
+#header .container nav #navAll .navMenu {
   width: 190px;
   height: 400px;
   background: url("../img/navbg.png") 0 0 no-repeat;
@@ -226,50 +226,50 @@ header .container nav #navAll .navMenu {
   top: 36px;
 }
 
-header .container nav #navAll .navMenu li {
+#header .container nav #navAll .navMenu li {
   width: 190px;
   height: 50px;
   line-height: 50px;
 }
 
-header .container nav #navAll .navMenu li:nth-child(1) {
+#header .container nav #navAll .navMenu li:nth-child(1) {
   background: url("../img/navicon.png") 10px -41px no-repeat;
 }
 
-header .container nav #navAll .navMenu li:nth-child(2) {
+#header .container nav #navAll .navMenu li:nth-child(2) {
   background: url("../img/navicon.png") 10px -146px no-repeat;
 }
 
-header .container nav #navAll .navMenu li:nth-child(3) {
+#header .container nav #navAll .navMenu li:nth-child(3) {
   background: url("../img/navicon.png") 10px -239px no-repeat;
 }
 
-header .container nav #navAll .navMenu li:nth-child(4) {
+#header .container nav #navAll .navMenu li:nth-child(4) {
   background: url("../img/navicon.png") 10px -342px no-repeat;
 }
 
-header .container nav #navAll .navMenu li:nth-child(5) {
+#header .container nav #navAll .navMenu li:nth-child(5) {
   background: url("../img/navicon.png") 10px -441px no-repeat;
 }
 
-header .container nav #navAll .navMenu li:nth-child(6) {
+#header .container nav #navAll .navMenu li:nth-child(6) {
   background: url("../img/navicon.png") 10px -542px no-repeat;
 }
 
-header .container nav #navAll .navMenu li:nth-child(7) {
+#header .container nav #navAll .navMenu li:nth-child(7) {
   background: url("../img/navicon.png") 10px -638px no-repeat;
 }
 
-header .container nav #navAll .navMenu li:nth-child(8) {
+#header .container nav #navAll .navMenu li:nth-child(8) {
   background: url("../img/navicon.png") 10px -739px no-repeat;
 }
 
-header .container nav #navAll .navMenu .act {
+#header .container nav #navAll .navMenu .act {
   color: #ff3d3b;
   font-weight: bold;
 }
 
-header .container nav .nav {
+#header .container nav .nav {
   float: left;
   width: 1010px;
   height: 34px;
@@ -277,28 +277,28 @@ header .container nav .nav {
   font: bold 14px/34px "Consolas";
 }
 
-header .container nav .nav li {
+#header .container nav .nav li {
   float: left;
   padding-left: 40px;
 }
 
-header .container nav .nav li a {
+#header .container nav .nav li a {
   color: #000;
 }
 
-header .container nav .nav li:nth-child(2) {
+#header .container nav .nav li:nth-child(2) {
   width: 160px;
   height: 34px;
   background: url("../img/nav1.gif") 40px -2px no-repeat;
 }
 
-header .container nav .nav li:nth-child(2) a {
+#header .container nav .nav li:nth-child(2) a {
   width: 100%;
   height: 100%;
   display: inline-block;
 }
 
-header .container nav .nav li:nth-child(5) {
+#header .container nav .nav li:nth-child(5) {
   width: 110px;
   height: 36px;
   background: url("../img/nav2.gif") 0px 2px no-repeat;
@@ -307,13 +307,13 @@ header .container nav .nav li:nth-child(5) {
   margin-left: 20px;
 }
 
-header .container nav .nav li:nth-child(5) a {
+#header .container nav .nav li:nth-child(5) a {
   width: 100%;
   height: 100%;
   display: inline-block;
 }
 
-header .container nav .navMenu2 {
+#header .container nav .navMenu2 {
   width: 545px;
   height: 400px;
   position: relative;
@@ -327,7 +327,7 @@ header .container nav .navMenu2 {
   display: none;
 }
 
-header .container nav .navMenu2 .navMenu3 {
+#header .container nav .navMenu2 .navMenu3 {
   position: absolute;
   left: 0;
   top: 0;
@@ -335,131 +335,19 @@ header .container nav .navMenu2 .navMenu3 {
   display: none;
 }
 
-header .container nav .navMenu2 .navMenu3 li {
+#header .container nav .navMenu2 .navMenu3 li {
   width: 504px;
   margin-bottom: 12px;
 }
 
-header .container nav .navMenu2 .navMenu3 a {
+#header .container nav .navMenu2 .navMenu3 a {
   color: #666;
   font-size: 12px;
 }
 
-header .container nav .navMenu2 .navMenu3 h3 a {
+#header .container nav .navMenu2 .navMenu3 h3 a {
   font-size: 13px;
   font-weight: bold;
   color: #333;
   padding-bottom: 5px;
-}
-
-.banner {
-  background-color: #fcecda;
-}
-
-.banner .container {
-  height: 400px;
-}
-
-.banner .container .bannerL {
-  float: left;
-  margin-left: 190px;
-  width: 810px;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-}
-
-.banner .container .bannerL ul {
-  position: absolute;
-  overflow: hidden;
-}
-
-.banner .container .bannerL li {
-  float: left;
-}
-
-.banner .container .bannerL img {
-  width: 810px;
-  height: 400px;
-  display: block;
-}
-
-.banner .container .bannerL .page {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 10px;
-}
-
-.banner .container .bannerL .page span {
-  display: inline-block;
-  margin: 0 5px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.banner .container .bannerL .page .active {
-  background-color: rgba(255, 0, 0, 0.8);
-}
-
-.banner .container .bannerL .zuo {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 20px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  line-height: 50px;
-  opacity: 0.8;
-  text-align: center;
-  display: none;
-  color: #fff;
-}
-
-.banner .container .bannerL .you {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 20px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  line-height: 50px;
-  opacity: 0.8;
-  text-align: center;
-  display: none;
-  color: #fff;
-}
-
-.banner .container .bannerL .zuo:hover, .banner .container .bannerL .you:hover {
-  background-color: #fc0;
-  cursor: pointer;
-}
-
-.banner .container .bannerR {
-  float: left;
-  width: 200px;
-  height: 400px;
-  background-color: #fcecda;
-}
-
-.banner .container .bannerR .bannerRT {
-  width: 200px;
-  height: 200px;
-  background: url("../img/bannerR.png") no-repeat;
-}
-
-.banner .container .bannerR .bannerRB {
-  width: 200px;
-  height: 200px;
-  background: url("../img/zhibojian.png") no-repeat;
 }

@@ -1,4 +1,4 @@
-footer {
+#footer {
   height: 556px;
   background: #f4f4f4;
   border-top: #ff3333 solid 2px;
@@ -6,22 +6,22 @@ footer {
   overflow: hidden;
 }
 
-footer .ft {
+#footer .ft {
   height: 214px;
 }
 
-footer .ft .ftl {
+#footer .ft .ftl {
   width: 760px;
   height: 214px;
   float: left;
 }
 
-footer .ft .ftl .ftllist {
+#footer .ft .ftl .ftllist {
   float: left;
   width: 127px;
 }
 
-footer .ft .ftl .ftllist dt h3 {
+#footer .ft .ftl .ftllist dt h3 {
   text-align: center;
   font: 14px/14px "Consolas";
   margin-bottom: 20px;
@@ -30,7 +30,7 @@ footer .ft .ftl .ftllist dt h3 {
   color: #333;
 }
 
-footer .ft .ftl .ftllist dd {
+#footer .ft .ftl .ftllist dd {
   width: 127px;
   height: 22px;
   text-align: center;
@@ -38,7 +38,7 @@ footer .ft .ftl .ftllist dd {
   color: #999;
 }
 
-footer .ft .ftc {
+#footer .ft .ftc {
   float: left;
   width: 240px;
   height: 160px;
@@ -47,7 +47,7 @@ footer .ft .ftc {
   position: relative;
 }
 
-footer .ft .ftc .ftcc {
+#footer .ft .ftc .ftcc {
   position: absolute;
   left: 0;
   top: 0;
@@ -55,7 +55,7 @@ footer .ft .ftc .ftcc {
   height: 214px;
 }
 
-footer .ft .ftc .ftcc h3 {
+#footer .ft .ftc .ftcc h3 {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -63,7 +63,7 @@ footer .ft .ftc .ftcc h3 {
   text-align: center;
 }
 
-footer .ft .ftc .ftcc span {
+#footer .ft .ftc .ftcc span {
   font-size: 12px;
   line-height: 22px;
   color: #999;
@@ -71,37 +71,37 @@ footer .ft .ftc .ftcc span {
   display: block;
 }
 
-footer .ft .ftc .ftcc .tel {
+#footer .ft .ftc .ftcc .tel {
   margin-bottom: 16px;
 }
 
-footer .ft .ftc .ftcc a {
+#footer .ft .ftc .ftcc a {
   width: 120px;
   height: 36px;
   display: block;
   margin: 2px auto;
 }
 
-footer .ft .ftr {
+#footer .ft .ftr {
   width: 196px;
   height: 192px;
   float: left;
   text-align: center;
 }
 
-footer .ft .ftr img {
+#footer .ft .ftr img {
   margin: 0 auto;
   margin-bottom: 6px;
 }
 
-footer .ft .ftr h3 {
+#footer .ft .ftr h3 {
   font-size: 14px;
   line-height: 24px;
   color: #333;
   font-weight: bold;
 }
 
-footer .ft .ftr span {
+#footer .ft .ftr span {
   margin: 0 45px;
   display: block;
   width: 110px;
@@ -111,28 +111,28 @@ footer .ft .ftr span {
   font-size: 12px;
 }
 
-footer .fc {
+#footer .fc {
   height: 160px;
   background-color: #efefef;
 }
 
-footer .fc .container {
+#footer .fc .container {
   height: 160px;
   background: url("../img/f_baozheng.jpg") no-repeat;
 }
 
-footer .fb {
+#footer .fb {
   height: 98px;
   text-align: center;
 }
 
-footer .fb p {
+#footer .fb p {
   color: #333;
   line-height: 30px;
   padding: 10px 0;
   font-size: 12px;
 }
 
-footer .fb a {
+#footer .fb a {
   margin: 0 18px;
 }
