@@ -72,14 +72,14 @@
                     });
                 </script>
             </div>
-            <div id="huodongtuijian">
-                <div class="hdtjT">
+            <div id="huodongtuijian" class="floor">
+                <div class="hdtjT floorT">
                     <i></i>
                     <span>活动推荐</span>
                 </div>
-                <div class="hdtjB">
-                    <div class="hdtjBL"></div>
-                    <div class="hdtjBR">
+                <div class="hdtjB floorB">
+                    <div class="hdtjBL floorBL"></div>
+                    <div class="floorBR">
                         <ul>
                             <li><a href="#"><img src="../img/hdtj_1.png" alt="" /></a></li>
                             <li><a href="#"><img src="../img/hdtj_2.jpg" alt="" /></a></li>
@@ -100,6 +100,168 @@
                         });
                     })
                 </script>
+            </div>
+            <div id="baosuiqu" class="floor">
+                <div class="baosuiquT floorT">
+                    <i></i>
+                    <span>保税区闪送</span>
+                    <ul class="bsq_tab">
+                        <li class="active">母婴食品</li>
+                        <li>个护家居</li>
+                    </ul>
+                </div>
+                <div class="baosuiquB">
+                    <div class="baosuiquBB">
+                        <div class="inbaosuiqu floorB">
+                            <div class="bsq_1L floorBL"></div>
+                            <div class="floorBR">
+                                <ul>
+                                    <li><a href="#"><img src="../img/bsq_b1.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_b2.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_b3.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_b4.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_b5.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_b6.jpg" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="inbaosuiqu floorB" style="display:none;">
+                            <div class="bsq_2L floorBL"></div>
+                            <div class="floorBR">
+                                <ul>
+                                    <li><a href="#"><img src="../img/bsq_d1.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_d2.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_d3.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_d4.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_d5.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/bsq_d6.jpg" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jQuery(function($){
+                                var $bsq_tab = $('.bsq_tab');
+                                var $inbaosuiqu = $('.inbaosuiqu');
+                                $bsq_tab.on('mouseenter','li',function(){
+                                    var idx = $(this).index();
+                                    if(idx==1){
+                                        $(this).addClass('active').siblings().removeClass('active');
+                                        $inbaosuiqu.eq(idx).css('display','block').siblings('div').css('display','none');  
+                                    }else{
+                                        $(this).addClass('active').siblings().removeClass('active');
+                                        $inbaosuiqu.eq(idx).css('display','block').siblings('div').css('display','none');
+                                            
+                                    }
+                                });
+                                $('.bsq_1L').carousel({
+                                    width:299,
+                                    height:451,
+                                    pn:false,
+                                    autoPlay:false,
+                                    imgs:['../img/bsq_a1.jpg']
+                                });
+                                $('.bsq_2L').carousel({
+                                    width:299,
+                                    height:451,
+                                    pn:false,
+                                    imgs:['../img/bsq_c1.jpg','../img/bsq_c2.jpg']
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div id="shipinbaojian" class="floor">
+                <div class="shipinbaojianT floorT">
+                    <i></i>
+                    <span>食品保健</span>
+                    <ul class="spbj_tab">
+                        <li class="active">饮料</li>
+                        <li>保健</li>
+                        <li>零食</li>
+                    </ul>
+                </div>
+                <div class="shipinbaojianB">
+                    <div class="shipinbaojianBB">
+                        <div class="inshipinbaojian floorB">
+                            <div class="spbj_1L floorBL"></div>
+                            <div class="floorBR">
+                                <ul>
+                                    <li><a href="#"><img src="../img/spbj_b1.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_b2.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_b3.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_b4.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_b5.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_b6.jpg" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="inshipinbaojian floorB" style="display:none;">
+                            <div class="spbj_2L floorBL"></div>
+                            <div class="floorBR">
+                                <ul>
+                                    <li><a href="#"><img src="../img/spbj_d1.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_d2.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_d3.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_d4.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_d5.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_d6.jpg" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="inshipinbaojian floorB" style="display:none;">
+                            <div class="spbj_3L floorBL"></div>
+                            <div class="floorBR">
+                                <ul>
+                                    <li><a href="#"><img src="../img/spbj_f1.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_f2.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_f3.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_f4.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_f5.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="../img/spbj_f6.jpg" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        jQuery(function($){
+                            var $spbj_tab = $('.spbj_tab');
+                            var $inshipinbaojian = $('.inshipinbaojian');
+                            $spbj_tab.on('mouseenter','li',function(){
+                                var idx = $(this).index();
+                                if(idx==1){
+                                    $(this).addClass('active').siblings().removeClass('active');
+                                    $inshipinbaojian.eq(idx).css('display','block').siblings('div').css('display','none');  
+                                }else{
+                                    $(this).addClass('active').siblings().removeClass('active');
+                                    $inshipinbaojian.eq(idx).css('display','block').siblings('div').css('display','none');
+                                        
+                                }
+                            });
+                            $('.spbj_1L').carousel({
+                                width:299,
+                                height:451,
+                                pn:false,
+                                imgs:['../img/spbj_a1.jpg','../img/spbj_a2.jpg','../img/spbj_a3.jpg']
+                            });
+                            $('.spbj_2L').carousel({
+                                width:299,
+                                height:451,
+                                pn:false,
+                                imgs:['../img/spbj_c1.jpg','../img/bsq_c2.jpg']
+                            });
+                            $('.spbj_3L').carousel({
+                                width:299,
+                                height:451,
+                                pn:false,
+                                imgs:['../img/spbj_e1.jpg','../img/spbj_e2.jpg']
+                            });
+                        });
+                    </script>
+                </div>
             </div>
         </div>
     </main>

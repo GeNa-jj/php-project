@@ -11,7 +11,10 @@
             }
             li:nth-child(1){width: 60px;}
             li:nth-child(2){width: 84px;background: url("../img/xiaotubiao.png") no-repeat 0 8px;}
-            li:nth-child(3){margin-left: 10px;width: 94px;background: url("../img/xiaotubiao.png") no-repeat 0 -48px;}
+            li:nth-child(3){
+                margin-left: 10px;width: 94px;background: url("../img/xiaotubiao.png") no-repeat 0 -48px;position: relative;
+                img{position: absolute;left: 50%;z-index: 9999;top: 28px;display: none;}
+            }
         }
         .title_top_fr{
             float: right;padding-top: 4px;

@@ -44,6 +44,15 @@
   margin-left: 10px;
   width: 94px;
   background: url("../img/xiaotubiao.png") no-repeat 0 -48px;
+  position: relative;
+}
+
+.title_top .container .title_top_fl li:nth-child(3) img {
+  position: absolute;
+  left: 50%;
+  z-index: 9999;
+  top: 28px;
+  display: none;
 }
 
 .title_top .container .title_top_fr {

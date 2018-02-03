@@ -13,8 +13,11 @@
         <div class="container">
             <ul class="title_top_fl">
                 <li><a href="#">首页</a></li>
-                <li><a href="#">收藏摩西</a></li>
-                <li><a href="#">关注摩西</a></li>
+                <li class="tviow"><a href="#">收藏摩西</a></li>
+                <li class="tviow erweima"><a href="#">关注摩西</a>
+                    <img src="../img/erweima.png" height="103" width="103" alt="" />
+                </li>
+
             </ul>
             <ul class="title_top_fr">
                 <li>您好，欢迎来到摩西！</li>
@@ -23,13 +26,39 @@
                     <a class="zhuce" href="#">免费注册</a> 
                 </li>
                 <li>
-                    <a href="#">购物车<strong style="font-weight:700;" id="head_car_count"></strong>  件商品</a>
+                    <a class="tviow" href="#">购物车<strong style="font-weight:700;" id="head_car_count"></strong>  件商品</a>
                 </li>
                 <li>
-                    <a href="#">在线客服 400-660-6366</a>
+                    <a class="tviow" href="#">在线客服 400-660-6366</a>
                 </li>
             </ul>
         </div>
+        <script type="text/javascript">
+            jQuery(function($){
+                var $title_top_fl = $('.title_top_fl');
+                     
+                $title_top_fl.on('mouseenter','.tviow',function(){
+                    var y = $(this).css('backgroundPositionY').match(/[-]*\d+/)[0]*1-27;    
+                    $(this).css({'background-position':'0px '+y+'px'});
+                }).on('mouseleave','.tviow',function(){
+                    $(this).css({'background-position':''});      
+                });
+                $('.erweima').mouseenter(function(event) {
+                    $(this).find('img').show();
+                }).mouseleave(function(event) {
+                    $(this).find('img').hide();
+                });;
+                var $title_top_fr = $('.title_top_fr');
+                     
+                $title_top_fr.on('mouseenter','.tviow',function(){
+                    var y = $(this).css('backgroundPositionY').match(/[-]*\d+/)[0]*1-27;    
+                    $(this).css({'background-position':'10px '+y+'px'});
+                }).on('mouseleave','.tviow',function(){
+                    $(this).css({'background-position':''});      
+                });
+
+            });
+        </script>
     </div>
     <header>
         <div class="container">
@@ -95,6 +124,13 @@
                                     $navMenu2.css('display','none');
                                     $navMenu3.eq(idx).css('display','none');  
                             });
+                            $navMenu2.mouseenter(function(event) {
+                                $navMenu2.css('display','inline-block');
+                                $navMenu3.eq(idx).css('display','inline-block');
+                            }).mouseleave(function(event) {
+                                $navMenu2.css('display','none');
+                                $navMenu3.eq(idx).css('display','none');
+                            });;
                                  
                         });
                     </script> 
