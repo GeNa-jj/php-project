@@ -45,11 +45,12 @@ var browserSync = require('browser-sync');
 gulp.task('serverJt',function(){
     browserSync({
 
-        server:'./src/',
+        // server:'./src/',
 
         port:1000,
 
-        //proxy:'http://localhost:1708',//能识别PHP，也能自动刷新页面
+        //能识别PHP，也能自动刷新页面,记得注释掉（server:'./src/',）
+        proxy:'http://localhost:10000',
 
         files:['./src/**/*.html','./src/**/*.css']
     });

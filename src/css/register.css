@@ -67,6 +67,14 @@
   margin-right: 90px;
 }
 
+#reg .container .regL .regLB p span {
+  height: 20px;
+  display: block;
+  font-size: 12px;
+  color: #f00;
+  display: none;
+}
+
 #reg .container .regL .regLB div {
   height: 105px;
 }
@@ -113,6 +121,7 @@
   text-align: center;
   font-size: 12px;
   color: #666;
+  cursor: pointer;
 }
 
 #reg .container .regR ul .selected {
@@ -176,6 +185,10 @@
   height: 47px;
 }
 
+#reg .container .regR .email p:nth-child(6) {
+  position: relative;
+}
+
 #reg .container .regR .email p:nth-child(6) input {
   width: 122px;
 }
@@ -195,12 +208,22 @@
   color: #FF3300;
 }
 
-#reg .container .regR .email .xieyi {
+#reg .container .regR .email p:nth-child(6) .yzm11 {
+  font-size: 12px;
+  position: absolute;
+  left: 140px;
+  top: 35px;
+  font-weight: normal;
+  color: #f00;
+  display: none;
+}
+
+#reg .container .regR .email .xieyi1 {
   height: 56px;
   padding-left: 130px;
 }
 
-#reg .container .regR .email .xieyi input {
+#reg .container .regR .email .xieyi1 input {
   width: 40px;
   height: 25px;
   outline: none;
@@ -208,7 +231,7 @@
   float: left;
 }
 
-#reg .container .regR .email .xieyi span {
+#reg .container .regR .email .xieyi1 span {
   vertical-align: bottom;
   display: inline-block;
   line-height: 25px;
@@ -216,6 +239,10 @@
 
 #reg .container .regR .tel p:nth-child(3) {
   height: 47px;
+}
+
+#reg .container .regR .tel p:nth-child(4) {
+  position: relative;
 }
 
 #reg .container .regR .tel p:nth-child(4) input {
@@ -237,6 +264,16 @@
   color: #FF3300;
 }
 
+#reg .container .regR .tel p:nth-child(4) .yzm21 {
+  font-size: 12px;
+  position: absolute;
+  left: 140px;
+  top: 35px;
+  font-weight: normal;
+  color: #f00;
+  display: none;
+}
+
 #reg .container .regR .tel p:nth-child(5) input {
   width: 122px;
 }
@@ -247,12 +284,12 @@
   color: #000;
 }
 
-#reg .container .regR .tel .xieyi {
+#reg .container .regR .tel .xieyi2 {
   height: 56px;
   padding-left: 130px;
 }
 
-#reg .container .regR .tel .xieyi input {
+#reg .container .regR .tel .xieyi2 input {
   width: 40px;
   height: 25px;
   outline: none;
@@ -260,7 +297,7 @@
   float: left;
 }
 
-#reg .container .regR .tel .xieyi span {
+#reg .container .regR .tel .xieyi2 span {
   vertical-align: bottom;
   display: inline-block;
   line-height: 25px;

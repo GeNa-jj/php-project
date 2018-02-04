@@ -41,6 +41,7 @@ jQuery(function($){
             $navMenu3.eq(idx).css('display','none');  
     });
     $navMenu2.mouseenter(function(event) {
+        $ul.show();
         $navMenu2.css('display','inline-block');
         $navMenu3.eq(idx).css('display','inline-block');
     }).mouseleave(function(event) {

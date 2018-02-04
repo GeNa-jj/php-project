@@ -570,3 +570,89 @@ main .louti li .active {
   background-color: #ff3333;
   color: #fff;
 }
+
+main .right_list {
+  width: 35px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 101;
+}
+
+main .right_list ul {
+  padding-top: 80px;
+  background-color: #3c3c3c;
+  height: 100%;
+  display: none;
+}
+
+main .right_list ul li {
+  display: block;
+  width: 35px;
+  height: 67px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0;
+  padding-top: 42px;
+}
+
+main .right_list ul li a {
+  color: #fff;
+  font-size: 12px;
+}
+
+main .right_list ul li:nth-child(1) {
+  background: url("../img/r0.png") no-repeat center 20px;
+}
+
+main .right_list ul li:nth-child(1) .ddcx {
+  background: #fff;
+  border: solid 10px #e2e2e2;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  display: none;
+  right: 36px;
+  font-size: 12px;
+  color: #666;
+  line-height: 15px;
+  text-align: center;
+}
+
+main .right_list ul li:nth-child(2) {
+  background: url("../img/r1.png") no-repeat center 20px;
+}
+
+main .right_list ul li:nth-child(3) {
+  background: url("../img/r2.png") no-repeat center 20px;
+}
+
+main .right_list ul li:nth-child(4) {
+  background: url("../img/r3.png") no-repeat center 20px;
+}
+
+main .right_list ul li:nth-child(5) {
+  background: url("../img/r4.png") no-repeat center 20px;
+}
+
+main .right_list ul li:nth-child(6) {
+  background: url("../img/r5.png") no-repeat center 20px;
+}
+
+main .right_list ul li:nth-child(7) {
+  background: url("../img/r6.png") no-repeat center 20px;
+  height: 35px;
+}
+
+main .right_list ul li:nth-child(8) {
+  background: url("../img/r7.png") no-repeat center 20px;
+  height: 35px;
+}
+
+main .right_list ul li:hover {
+  background-color: #f86f76;
+}

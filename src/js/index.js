@@ -1,10 +1,10 @@
 require(['config'],function(){
     require(['jquery','carousel','common'],function($){
         //导入头部/尾部
-        $('header').load('../html/header.html',function(){
+        $('header').load('html/header.html',function(){
             require(['header']);
         });
-        $('footer').load('../html/footer.html');
+        $('footer').load('html/footer.html');
         //banner    
         (function(){
             var $box = $('.bannerL');
@@ -12,7 +12,7 @@ require(['config'],function(){
                 width:810,
                 height:400,
                 duration:5000,
-                imgs:['../img/banner1.jpg','../img/banner2.jpg','../img/banner3.jpg','../img/banner4.jpg','../img/banner5.jpg']
+                imgs:['img/banner1.jpg','img/banner2.jpg','img/banner3.jpg','img/banner4.jpg','img/banner5.jpg']
             });
         })();
         //主内容js
@@ -164,5 +164,14 @@ require(['config'],function(){
                 $li.eq(n).addClass('active');       
             });
         })();
+        //右列表
+        (function(){
+            $('.right_list').mouseenter(function(event) {console.log(666)
+                 
+                $(this).find('ul').show();
+            }).mouseleave(function(event) {
+                $(this).find('ul').hide();
+            });
+        });
     });
 });

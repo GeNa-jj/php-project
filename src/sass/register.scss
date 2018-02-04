@@ -22,6 +22,9 @@
                     a{
                         float: right;font-size: 12px;margin-top: 10px;margin-right: 90px;  
                     }
+                    span{
+                        height: 20px;display:block;font-size: 12px;color:#f00;display:none;
+                    }
                 }
                 div{
                     height: 105px;
@@ -38,7 +41,7 @@
             ul{
                 display: block;padding-left: 180px;margin-top: 10px;
                 li{
-                    width: 100px;float: left;line-height: 30px;border: 1px solid #ddd;text-align: center;font-size: 12px;color: #666;
+                    width: 100px;float: left;line-height: 30px;border: 1px solid #ddd;text-align: center;font-size: 12px;color: #666;cursor: pointer;
                 }
                 .selected{
                     background: #EC8D36;color: #fff;border: solid 1px #EC8D36;
@@ -67,6 +70,7 @@
                     height: 47px;
                 }
                 p:nth-child(6){
+                    position:relative;
                     input{
                         width: 122px;
                     }
@@ -78,8 +82,9 @@
                     .yzm1_change:hover{
                         cursor: pointer;color: #FF3300;
                     }
+                    .yzm11{font-size: 12px;position:absolute;left: 140px;top: 35px;font-weight: normal;color:#f00;display:none;}
                 }
-                .xieyi{
+                .xieyi1{
                     height: 56px;padding-left: 130px;
                     input{
                             width: 40px;height: 25px;outline: none;border: 0px;float: left;
@@ -92,6 +97,7 @@
                     height: 47px;
                 }
                 p:nth-child(4){
+                    position:relative;
                     input{
                         width: 122px;
                     }
@@ -103,6 +109,7 @@
                     .yzm2_change:hover{
                         cursor: pointer;color: #FF3300;
                     }
+                    .yzm21{font-size: 12px;position:absolute;left: 140px;top: 35px;font-weight: normal;color:#f00;display:none;}
                 }
                 p:nth-child(5){
                     input{
@@ -112,7 +119,7 @@
                         display:inline-block;margin: 0 10px;color:#000;
                     }
                 }
-                .xieyi{
+                .xieyi2{
                     height: 56px;padding-left: 130px;
                     input{
                             width: 40px;height: 25px;outline: none;border: 0px;float: left;
