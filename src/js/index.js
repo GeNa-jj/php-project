@@ -143,7 +143,7 @@ require(['config'],function(){
                  if(num==9){
                     $('html,body').animate({'scrollTop':0}); 
                  }else{
-                    $('html,body').animate({'scrollTop':num*520+970})                  
+                    $('html,body').animate({'scrollTop':$(this.firstChild.id).offset().top});
                  }
             });
             $(window).scroll(function(){
@@ -166,12 +166,13 @@ require(['config'],function(){
         })();
         //右列表
         (function(){
-            $('.right_list').mouseenter(function(event) {console.log(666)
+             
+            $('.right_list').mouseenter(function(){console.log(666)
                  
                 $(this).find('ul').show();
-            }).mouseleave(function(event) {
+            }).mouseleave(function(){
                 $(this).find('ul').hide();
             });
-        });
+        })();
     });
 });

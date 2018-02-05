@@ -258,3 +258,91 @@ main .container .goodsR .goodsR_c .page {
   height: 27px;
   overflow: hidden;
 }
+
+main .container .goodsR .goodsR_c .page .con {
+  float: right;
+  padding-right: 10px;
+}
+
+main .container .goodsR .goodsR_c .page .con .last, main .container .goodsR .goodsR_c .page .con .next {
+  float: left;
+  border: #CCC 1px solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 15px;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+main .container .goodsR .goodsR_c .page .con .items {
+  float: left;
+  margin-right: 10px;
+}
+
+main .container .goodsR .goodsR_c .page .con .items .item {
+  float: left;
+  margin-right: 10px;
+  border: #CCC 1px solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  background-color: #FFF;
+  color: #666;
+}
+
+main .container .goodsR .goodsR_c .page .con .items .active {
+  background-color: #ccc;
+  color: #fff;
+}
+
+main .container .goodsR .goodsR_c .page .con .items .item:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+main .container .goodsR .goodsR_c .page .con .total {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 50px;
+  padding-left: 10px;
+}
+
+main .container .goodsR .goodsR_c .page .con .to {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+main .container .goodsR .goodsR_c .page .con .to input {
+  border: #ccc solid 1px;
+  height: 22px;
+  width: 33px;
+  margin-left: 10px;
+  padding: 0px;
+  font: 12px/22px "Consolas";
+  background-color: #fff;
+}
+
+main .container .goodsR .goodsR_c .page .con .ensure {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+main .container .goodsR .goodsR_b {
+  margin: 3px 5px 3px 15px;
+  background: #ffc;
+  color: #f60;
+  line-height: 22px;
+  padding: 3px 5px 3px 15px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+}
