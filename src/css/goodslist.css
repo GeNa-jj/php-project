@@ -1,0 +1,260 @@
+main {
+  min-height: 200px;
+  padding-bottom: 120px;
+  height: 2468px;
+  color: #666;
+}
+
+main .container {
+  padding-top: 16px;
+}
+
+main .container .goodsL {
+  width: 210px;
+  padding-bottom: 50px;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+main .container .goodsL h2 {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 14px;
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #fafafa;
+  margin: 0;
+}
+
+main .container .goodsL .hotlist {
+  width: 208px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+main .container .goodsL .hotlist li {
+  padding-top: 10px;
+  width: 208px;
+}
+
+main .container .goodsL .hotlist li a {
+  width: 208px;
+  height: 100px;
+  padding: 0 54px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+main .container .goodsL .hotlist li a img {
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+
+main .container .goodsL .hotlist li .gl_title {
+  font: 12px/20px "Consolas";
+  padding: 0 14px;
+  display: block;
+  height: 36px;
+  margin: 0;
+  line-height: 18px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .container .goodsL .hotlist li .gl_price {
+  display: block;
+  margin: 6px 14px;
+  color: #F86F76;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  font: 14px/20px "Consolas";
+}
+
+main .container .goodsR {
+  width: 970px;
+  padding-bottom: 25px;
+  float: right;
+}
+
+main .container .goodsR .goodsR_t {
+  height: 42px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+  padding-left: 8px;
+}
+
+main .container .goodsR .goodsR_t .sort {
+  float: left;
+}
+
+main .container .goodsR .goodsR_t .sort li {
+  float: left;
+  display: inline-block;
+  padding: 5px 2px 8px 3px;
+  line-height: 25px;
+  font-size: 12px;
+}
+
+main .container .goodsR .goodsR_t .sort li .s_default {
+  display: block;
+  line-height: 25px;
+  padding: 0px 10px 0px 10px;
+  border: solid 1px #ddd;
+  cursor: pointer;
+}
+
+main .container .goodsR .goodsR_t .sort li .s_up, main .container .goodsR .goodsR_t .sort li .s_down {
+  background: #F64900;
+  border: 1px solid #E4393C;
+  font-weight: 700;
+  padding-right: 18px;
+  color: #fff;
+  display: block;
+  line-height: 25px;
+  padding: 0px 18px 0 10px;
+  cursor: pointer;
+}
+
+main .container .goodsR .goodsR_t .sort li i {
+  height: 11px;
+  overflow: hidden;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  width: 9px;
+}
+
+main .container .goodsR .goodsR_t .sort li:nth-child(3) {
+  position: relative;
+}
+
+main .container .goodsR .goodsR_t .sort li:nth-child(3) i {
+  background-image: url("../img/goods_xtb.png");
+  background-repeat: no-repeat;
+  background-position: 0px -12px;
+}
+
+main .container .goodsR .goodsR_t .sort li:nth-child(4) {
+  position: relative;
+}
+
+main .container .goodsR .goodsR_t .sort li:nth-child(4) i {
+  background-image: url("../img/goods_xtb.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+main .container .goodsR .goodsR_t .region {
+  float: left;
+  margin-left: 25px;
+}
+
+main .container .goodsR .goodsR_t .region li {
+  float: left;
+  display: inline-block;
+  padding: 5px 2px 8px 3px;
+  line-height: 25px;
+  font-size: 12px;
+}
+
+main .container .goodsR .goodsR_t .region li input {
+  width: 40px;
+  border: 1px solid #ddd;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  text-align: center;
+  font: 12px/20px "Consolas";
+  vertical-align: baseline;
+}
+
+main .container .goodsR .goodsR_t .region li .btn {
+  display: block;
+  text-align: center;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  line-height: 24px;
+  height: 24px;
+  background-color: #FFF;
+}
+
+main .container .goodsR .goodsR_t .region li .btn:hover {
+  background: #F64900;
+  color: #fff;
+}
+
+main .container .goodsR .goodsR_c {
+  height: 2221px;
+}
+
+main .container .goodsR .goodsR_c ul {
+  height: 2144px;
+}
+
+main .container .goodsR .goodsR_c ul li {
+  width: 231px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 4px solid #fff;
+  float: left;
+  margin: 10px 0px 0px 9px;
+}
+
+main .container .goodsR .goodsR_c ul li a {
+  margin-top: 5px;
+  display: block;
+  width: 223px;
+}
+
+main .container .goodsR .goodsR_c ul li a img {
+  display: inline-block;
+  height: 158px;
+  width: 158px;
+  margin-left: 32px;
+  margin-bottom: 15px;
+}
+
+main .container .goodsR .goodsR_c ul li:hover {
+  border-color: #dddddd;
+}
+
+main .container .goodsR .goodsR_c ul .price {
+  text-align: center;
+  line-height: 18px;
+  height: 22px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main .container .goodsR .goodsR_c ul .price .price1 {
+  color: #990033;
+}
+
+main .container .goodsR .goodsR_c ul .price .price2 {
+  color: #f00;
+}
+
+main .container .goodsR .goodsR_c ul .name {
+  text-overflow: ellipsis;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  color: #333;
+  height: 40px;
+  padding-left: 7px;
+  text-indent: 2em;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+main .container .goodsR .goodsR_c .page {
+  margin: 40px 0 10px 0;
+  font-size: 12px;
+  color: #999;
+  height: 27px;
+  overflow: hidden;
+}

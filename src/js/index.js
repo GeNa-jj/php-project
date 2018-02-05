@@ -1,8 +1,8 @@
 require(['config'],function(){
-    require(['jquery','carousel','common'],function($){
+    require(['jquery','header','carousel','common'],function($,h){
         //导入头部/尾部
         $('header').load('html/header.html',function(){
-            require(['header']);
+            h.header();
         });
         $('footer').load('html/footer.html');
         //banner    

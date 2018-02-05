@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>商品列表</title>
+    <link rel="stylesheet" type="text/css" href="../css/goodslist.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <script src="../js/require.js" data-main="../js/goodslist" type="text/javascript"></script>
+</head>
+<body class="shouye">
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="goodsL">
+                <h2>热销商品</h2>
+                <ul class="hotlist">
+                    
+                </ul>
+            </div>
+            <div class="goodsR">
+                <div class="goodsR_t">
+                    <ul class="sort">
+                        <li>排列：</li>
+                        <li>
+                            <a class="s_default">默认</a>
+                        </li>
+                        <li>
+                            <a class="s_up" title="按价格由低到高排序">销量</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a class="s_down" title="按价格由高到低排序">销量</a>
+                            <i></i>
+                        </li>
+                    </ul>
+                    <ul class="region">
+                        <li>价格：</li>
+                        <li>
+                            <input type="text" id="price_min"/>(元) 至
+                            <input type="text" id="price_max"/>(元)
+                        </li>
+                        <li>
+                            <button class="btn">确定</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="goodsR_c">
+                    <ul>
+                        
+                    </ul>
+                    <div class="page">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

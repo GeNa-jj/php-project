@@ -1,8 +1,8 @@
 require(['config'],function(){
-    require(['jquery','carousel','common'],function($){
+    require(['jquery','header','carousel','common'],function($,h){
         //导入头部/尾部
         $('header').load('../html/header.html',function(){
-            require(['header'],function(){
+            
                 // 隐藏二级导航      
                 var $navAll = $('#navAll');
                 var $ul = $navAll.find('.navMenu');
@@ -17,7 +17,9 @@ require(['config'],function(){
                 }).mouseleave(function(event) {
                     $ul.hide();
                 }); 
-            });
+
+                h.header();
+           
         });
         $('footer').load('../html/footer.html');
 
@@ -377,11 +379,18 @@ require(['config'],function(){
                             console.log(res)
                                  
                             if(res==='yesyes'){
+                                var user = [{
+                                    name:name,
+                                    password:password
+                                }];
                                 $name.next().hide();
                                 $password.next().hide();
                                 alert('恭喜你登录成功！');
                                 $name.val('');
                                 $password.val('');
+                                Cookie.set('user',JSON.stringify(user),{path:'/'}); 
+                                window.location.href="../index.html"; 
+                                    
                             }else if(res==='yesno'){
                                 $name.next().hide();
                                 $password.focus().next().show().text('密码错误');

@@ -1,0 +1,108 @@
+main{
+    min-height: 200px;padding-bottom: 120px;height: 2468px;color: #666;
+    .container{
+        padding-top: 16px;
+        .goodsL{
+            width: 210px;padding-bottom: 50px;float: left;border: 1px solid #ccc;
+            h2{
+                height: 36px;line-height: 36px;padding: 0 14px;border-bottom: 1px solid #CCC;font-size: 14px;font-weight: 400;background-color: #fafafa;margin: 0;
+            }
+            .hotlist{
+                width: 208px;overflow: hidden;margin: 0 auto;
+                li{
+                    padding-top: 10px;width: 208px;
+                    a{
+                        width: 208px;height: 100px;padding: 0 54px;display:block;margin-bottom: 6px;
+                        img{
+                            height: 100px;width: 100px;display:block;
+                        }
+                    }
+                    .gl_title{
+                        font: 12px/20px "Consolas";padding: 0 14px;display: block;height: 36px;margin: 0;line-height: 18px;color: #666;overflow: hidden;text-overflow: ellipsis;
+                    }
+                    .gl_price{
+                        display: block;margin: 6px 14px;color: #F86F76;padding-bottom: 16px;border-bottom: 1px solid #eee;font: 14px/20px "Consolas";
+                    }
+                }
+            }
+        }
+        .goodsR{
+            width: 970px;padding-bottom: 25px;float: right;
+            .goodsR_t{
+                height: 42px;border: 1px solid #ddd;margin-top: 8px;padding-left: 8px;
+                .sort{
+                    float: left;
+                    li{
+                        float: left;display: inline-block;padding: 5px 2px 8px 3px;line-height: 25px;font-size: 12px;
+                        .s_default{
+                            display: block;line-height: 25px;padding: 0px 10px 0px 10px;border: solid 1px #ddd;cursor: pointer;
+                        }
+                        .s_up,.s_down{
+                            background: #F64900;border: 1px solid #E4393C;font-weight: 700;padding-right: 18px;color: #fff;display: block;line-height: 25px;padding: 0px 18px 0 10px;cursor: pointer;
+                        }
+                        i{
+                            height: 11px;overflow: hidden;position: absolute;right: 8px;top: 12px;width: 9px;
+                        }
+                    }
+                    li:nth-child(3){
+                        position: relative;
+                        i{
+                            background-image: url("../img/goods_xtb.png");background-repeat: no-repeat;background-position: 0px -12px;
+                        }
+                    }
+                    li:nth-child(4){
+                        position: relative;
+                        i{
+                            background-image: url("../img/goods_xtb.png");background-repeat: no-repeat;background-position: 0px 0px;
+                        }
+                    }
+
+                }
+                .region{
+                    float: left;margin-left: 25px;
+                    li{
+                        float: left;display: inline-block;padding: 5px 2px 8px 3px;line-height: 25px;font-size: 12px;
+                        input{
+                            width: 40px;border: 1px solid #ddd;padding: 0;margin: 0;height: 20px;text-align: center;font: 12px/20px "Consolas";vertical-align: baseline;
+                        }
+                        .btn{
+                            display: block;text-align:center;padding: 0 10px;border:1px solid #ddd;line-height: 24px;height: 24px;background-color: #FFF;
+                        }
+                        .btn:hover{
+                            background: #F64900;color: #fff;
+                        }
+                    }
+                }
+            }
+            .goodsR_c{
+                height: 2221px;
+                ul{
+                    height: 2144px;
+                    li{
+                        width: 231px;padding-bottom: 10px;border-radius: 10px;border: 4px solid #fff;float: left;margin: 10px 0px 0px 9px;
+                        a{
+                            margin-top: 5px;display:block;width: 223px;
+                            img{
+                                display:inline-block;height: 158px;width: 158px;margin-left: 32px;margin-bottom: 15px;
+                            }
+                        }
+                    }
+                    li:hover{
+                        border-color: rgb(221,221,221);
+                    }
+                    .price{
+                        text-align: center;line-height: 18px;height: 22px;line-height: 20px;font-size: 14px;font-weight: bold;
+                        .price1{color: #990033;}
+                        .price2{color: #f00;}
+                    }
+                    .name{
+                        text-overflow: ellipsis;text-decoration: none;display: block;overflow: hidden;color: #333;height: 40px;padding-left: 7px;text-indent: 2em;font-size: 12px;line-height: 20px;
+                    }
+                }
+                .page{
+                     margin: 40px 0 10px 0;font-size: 12px;color: #999;height: 27px;overflow: hidden;
+                }
+            }
+        }
+    }
+}
