@@ -71,3 +71,7 @@
 
     echo json_encode($res,JSON_UNESCAPED_UNICODE);
     // fclose($file);
+    
+    
+    //关闭连接
+    $conn->close();
