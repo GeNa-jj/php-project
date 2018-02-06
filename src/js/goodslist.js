@@ -24,6 +24,7 @@ require(['config'],function(){
         $('footer').load('../html/footer.html');
 
         var a=0;
+        var n=1;
         var pageNo = 1;
         var qty = 30;
         //请求数据
@@ -35,11 +36,8 @@ require(['config'],function(){
                 data:{pageNo:pageNo,qty:qty},
                 success:function(res){
                     console.log(res);
-                          
+
                     show(res);
-
-                    
-
 
                     var html2='';
                     for(var i=5;i<15;i++){
@@ -50,19 +48,8 @@ require(['config'],function(){
                         </li>` ;
                     }
 
-                    $('.hotlist').html(html2);
-                    
-                    var n = Math.ceil(res.total/res.qty);
-                    var html3='';
-                    for(var i=1;i<=n;i++){
-                        html3 += `<span class="item">${i}</span>`
-                    }
-                    $('.items').html(html3).children('span').eq(0).addClass('active');
-                    $('.total').text('共'+n+'页');
+                    $('.hotlist').html(html2); 
 
-
-                    $('.to').find('input').val(1)
-                         
                 },
                 dataType:'json'
             });
@@ -70,8 +57,7 @@ require(['config'],function(){
         var $ul = $('.goodsR_c').children('ul');
 
         //数据生成列表
-        function show(res){
-            
+        function bian(res){
             var html = $.map(res.data,function(item){
                 return `<li data-id="${item.id}">
                     <a href="#" title="${item.name}">
@@ -83,7 +69,8 @@ require(['config'],function(){
                         <p class="name">${item.name}</p>
                     </a>
                 </li>`;
-            }).join('')
+            }).join('');
+            $ul.html('');
             $ul.html(html);
 
             var $price2 = $('.price2');
@@ -91,20 +78,54 @@ require(['config'],function(){
                 if($(item).text()=='/ 0折'){
                     $(item).hide();
                 }
-            });
+            }); 
         }
+        function show(res){
+            bian(res);
+
+            n = Math.ceil(res.total/res.qty);
+            var html3='';
+            for(var i=1;i<=n;i++){
+                html3 += `<span class="item">${i}</span>`
+            }
+            $('.items').html('').html(html3).children('span').eq(0).addClass('active');
+            $('.total').text('共'+n+'页');
+
+
+            $('.to').find('input').val(1);   
+        }
+        var price_min;
+        var price_max;
 
         //价格升降排序
         (function(){
-            $('.s_up').click(function(){
-                a=1;
+            $('.s_default').click(function(){
+                a=0;
+                pageNo=1;
                 $.ajax({
                     type:'get',
-                    url:'../api/up_price.php',
-                    data:{pageNo:pageNo,qty:qty},
+                    url:'../api/goodslist.php',
+                    data:{pageNo:pageNo,qty:qty,a:a},
                     success:function(res){
                         console.log(res);
-                        $ul.html('');
+                        
+                        show(res);
+                    },
+                    dataType:'json'
+                });
+            });
+            $('.s_up').click(function(){
+                a=1;
+                pageNo=1;
+                $.ajax({
+                    type:'get',
+                    url:'../api/goodslist.php',
+                    data:{pageNo:pageNo,qty:qty,a:a,
+                        price_min:price_min,
+                        price_max:price_max},
+                    success:function(res){
+                        console.log(res);
+                        
                         show(res);
                     },
                     dataType:'json'
@@ -112,167 +133,147 @@ require(['config'],function(){
             });
             $('.s_down').click(function(){
                 a=2;
+                pageNo=1;
                 $.ajax({
                     type:'get',
-                    url:'../api/down_price.php',
-                    data:{pageNo:pageNo,qty:qty},
+                    url:'../api/goodslist.php',
+                    data:{pageNo:pageNo,qty:qty,a:a,
+                        price_min:price_min,
+                        price_max:price_max},
                     success:function(res){
                         console.log(res);
-                        $ul.html('');
+                        
                         show(res);
                     },
                     dataType:'json'
                 });
             });
+            $('.btn').click(function(){
+                a=3;
+                pageNo=1;
+                price_min = $('#price_min').val();
+                price_max = $('#price_max').val();     
+                $.ajax({
+                    type:'get',
+                    url:'../api/goodslist.php',
+                    data:{
+                        pageNo:pageNo,
+                        qty:qty,
+                        a:a,
+                        price_min:price_min,
+                        price_max:price_max
+                    },
+                    success:function(res){
+                        console.log(res);
+                        
+                        show(res);
+
+                    },
+                    dataType:'json'
+                });
+            });       
         })();
 
         //根据页数生成数据
         (function(){
+            var page;
             $('.items').on('click','span',function(){
-                var page = $(this).text();
+                page = $(this).text();
                 $(this).addClass('active').siblings().removeClass('active');
                 pageNo = page;
-                if(a==0){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/goodslist.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }else if(a==1){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/up_price.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }else if(a==2){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/up_price.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }    
+                $.ajax({
+                    type:'get',
+                    url:'../api/goodslist.php',
+                    data:{pageNo:pageNo,qty:qty,a:a,
+                        price_min:price_min,
+                        price_max:price_max},
+                    success:function(res){
+                        console.log(res);
+                        
+                        bian(res);
+                    },
+                    dataType:'json'
+                });
+                    
             });
             $('.last').click(function(){
-                var $item = $('.item');
-                var page = $item.filter('.active').text();
+                var $item = $('.item'); 
+                page = $item.filter('.active').text();
                 page--;
                 if(page<1){
                     page=1;
-                }else if(page>5){
-                    page=5;
+                }else if(page>n){
+                    page=n;
                 }
                 $item.removeClass('active');
                 $item.eq(page-1).addClass('active');
                 pageNo = page;
-                if(a==0){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/goodslist.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }else if(a==1){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/up_price.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }else if(a==2){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/up_price.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }    
+                $.ajax({
+                    type:'get',
+                    url:'../api/goodslist.php',
+                    data:{pageNo:pageNo,qty:qty,a:a,
+                        price_min:price_min,
+                        price_max:price_max},
+                    success:function(res){
+                        console.log(res);
+                        
+                        bian(res);
+                    },
+                    dataType:'json'
+                });
+               
                      
             });
             $('.next').click(function(){
-                var $item = $('.item');
-                var page = $item.filter('.active').text();
-                console.log(page)
-                     
+                var $item = $('.item'); 
+                page = $item.filter('.active').text(); 
                 page++;
                 if(page<1){
                     page=1;
-                }else if(page>5){
-                    page=5;
+                }else if(page>n){
+                    page=n;
                 }
                 $item.removeClass('active');
                 $item.eq(page-1).addClass('active');
                 pageNo = page;
-                if(a==0){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/goodslist.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }else if(a==1){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/up_price.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }else if(a==2){
-                    $.ajax({
-                        type:'get',
-                        url:'../api/up_price.php',
-                        data:{pageNo:pageNo,qty:qty},
-                        success:function(res){
-                            console.log(res);
-                            $ul.html('');
-                            show(res);
-                        },
-                        dataType:'json'
-                    });
-                }    
-                     
+                $.ajax({
+                    type:'get',
+                    url:'../api/goodslist.php',
+                    data:{pageNo:pageNo,qty:qty,a:a,
+                        price_min:price_min,
+                        price_max:price_max},
+                    success:function(res){
+                        console.log(res);
+                        
+                        bian(res);
+                    },
+                    dataType:'json'
+                });      
+            });
+            $('.ensure').click(function(){
+                var $item = $('.item'); 
+                page = $('.to').find('input').val();
+                if(page<1){
+                    page=1;
+                }else if(page>n){
+                    page=n;
+                }
+                $item.removeClass('active');
+                $item.eq(page-1).addClass('active');
+                pageNo = page;
+                $.ajax({
+                    type:'get',
+                    url:'../api/goodslist.php',
+                    data:{pageNo:pageNo,qty:qty,a:a,
+                        price_min:price_min,
+                        price_max:price_max},
+                    success:function(res){
+                        console.log(res);
+                        
+                        bian(res);
+                    },
+                    dataType:'json'
+                });      
             });
         })();
     });

@@ -110,6 +110,7 @@
                 });
                 $this.mouseleave(function(){
                     if(opt.autoPlay){
+                        clearInterval(opt.timer);
                         opt.timer=setInterval(()=>{
                             show();
                         },opt.duration);
@@ -124,7 +125,7 @@
             function move(){
                 opt.timer = setInterval(()=>{
                     show();
-                },opt.duration);
+                },opt.duration);         
             }
             function show(){
                 opt.index++;
