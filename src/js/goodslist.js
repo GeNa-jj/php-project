@@ -60,7 +60,7 @@ require(['config'],function(){
         function bian(res){
             var html = $.map(res.data,function(item){
                 return `<li data-id="${item.id}">
-                    <a href="#" title="${item.name}">
+                    <a href="goodsdetail.html?id=${item.id}" title="${item.name}">
                         <img src="${item.picture}" alt="" />
                         <p class="price">
                             <strong class="price1">${item.price}元人民币</strong>
