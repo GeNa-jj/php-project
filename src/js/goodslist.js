@@ -1,7 +1,7 @@
 require(['config'],function(){
     require(['jquery','header','carousel','common'],function($,h){
         //导入头部/尾部
-        $('header').load('../html/header.html',function(){
+        $('header').load('header.html',function(){
             
                 // 隐藏二级导航      
                 var $navAll = $('#navAll');
@@ -21,7 +21,7 @@ require(['config'],function(){
                 h.header();
            
         });
-        $('footer').load('../html/footer.html');
+        $('footer').load('footer.html');
 
         var a=0;
         var n=1;

@@ -1,7 +1,7 @@
 require(['config'],function(){
     require(['jquery','header','carousel','zoom','common'],function($,h){
         //导入头部/尾部
-        $('header').load('../html/header.html',function(){
+        $('header').load('header.html',function(){
             
                 // 隐藏二级导航      
                 var $navAll = $('#navAll');
@@ -21,7 +21,7 @@ require(['config'],function(){
                 h.header();
            
         });
-        $('footer').load('../html/footer.html');
+        $('footer').load('/footer.html');
 
         // 数据生成
         (function(){
@@ -101,7 +101,20 @@ require(['config'],function(){
                         var $li = $('.main_c').find('li').eq(5);
                         $li.on('click','div',function(){
                             $(this).addClass('active').find('i').show();
+                                 
                             $(this).siblings().removeClass('active').find('i').hide();
+
+                            var $a = $(this).parent().find('a');
+                            var idx = $(this).index();
+                            if(idx==0){
+                                $a.text('海外直邮，发货后约3~10天到货');
+                            }else if(idx==1){
+                                $a.text('经济航空运，发货后约7~20天到货');
+                            }else if(idx==2){
+                                $a.text('海外直邮，发货后约2~3月到货');
+                            }else{
+                                $a.text('特惠直邮（DPS），发货后约9~11天到货');
+                            }
                         });
 
                         $('.jian').click(function(){

@@ -1,0 +1,106 @@
+main{
+    background-color: #FFF;font-size: 12px;
+    .container{
+        padding-top: 35px;
+        .car_none{
+            height: 46px;text-align:center;line-height: 46px;
+        }
+        .car{
+            margin-top: 5px;
+            .car_t{
+                padding: 10px 0px;background: #f3f3f3;border-bottom: 1px solid #ccc;
+                ul{
+                    li{
+                        float: left;line-height: 20px;color:#333;
+                    }
+                    li:nth-child(1){
+                        width: 575px;text-indent: 160px;
+                    }
+                    li:nth-child(2){
+                        width: 150px;text-align: center
+                        ;
+                    }
+                    li:nth-child(3){
+                        width: 152px;text-align: center
+                        ;
+                    }
+                    li:nth-child(4){
+                        width: 118px;text-align: center
+                        ;
+                    }
+                    li:nth-child(5){
+                        width: 124px;text-align: center
+                        ;
+                    }
+                }
+            }
+            .car_c{
+                ul{
+                    li{
+                        padding: 13px 0 30px;border: 1px solid #ccc;border-top:0 none;height: 125px;
+                        div{float: left;}
+                        .goods{
+                            margin-left: 20px;width: 552px;
+                            img{width: 80px;height: 80px;border: 1px solid #cccccc;text-align: center;float: left;display:inline;}
+                            p{
+                                padding-left: 102px;margin-right: 100px;
+                                a{
+                                    font-size: 14px;line-height: 26px;
+                                    }
+                            }
+                        }
+                        .price{
+                            width: 150px;color: #333333;font-size: 14px;text-align: center;
+                        }
+                        .qty{
+                            width: 108px;height: 35px;margin-left: 30px;
+                            a{
+                                display: block;width: 33px;height: 33px;border-top: 1px solid #c8c8c8;border-bottom: 1px solid #c8c8c8;text-align: center;line-height: 33px;background: #eff3f6;color: #666;font-size: 20px;float: left;
+                            }
+                            input{
+                                display: block;width: 36px;height: 33px;border-top: 1px solid #c8c8c8;border-bottom: 1px solid #c8c8c8;border-left: none;border-right: none;float: left;text-align: center;line-height: 33px;
+                            }
+                            .jian{border-left: 1px solid #c8c8c8;}
+                            .jia{border-right: 1px solid #c8c8c8;}
+                        }
+                        .sum{
+                            width: 152px;color: #333333;font-size: 14px;text-align: center;
+                        }
+                        .action{
+                            width: 123px;margin-left: 30px;
+                            a{width: 123px;display:block;line-height: 20px;}
+                        }
+                    }
+                }
+                a{cursor:pointer;}
+            }
+            .car_b{
+                margin-top: 38px;
+                .car_bt{
+                    height: 33px;background-color: #ccc;background: url("../img/border-x.jpg") repeat-x bottom left;
+                    span{color: #f86f76;background: #ffffff;border: 1px solid #d3d3d3;border-bottom: 1px solid #fff;display: inline;padding: 6px 28px;font-size: 14px;cursor: pointer;float: left;}
+                }
+                .car_bb{
+                    display: block;width: 1198px;margin: 0px auto;background: #ffffff;padding-top: 34px;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;overflow: hidden;position: relative;height: 300px;margin-bottom: 100px;
+                    ul{
+                        li{
+                            display: block;width: 1200px;position: absolute;left: 0px;top: 0px;padding: 6px 28px;font-size: 14px;color: #333333;float: left;cursor: pointer;
+                            a{
+                                width: 190px;float: left;display:block;line-height: 18px;padding: 0 16px;
+                                 span{display: block;width: 135px;text-align: center;color: #e43b36;font-weight: bold;font-size: 14px;margin-top: 20px;}
+
+                            }
+                        }
+                    }
+                    .zuo{
+                        display: block;width: 53px;height: 250px;float: left;background: url("../img/car_zuo.png") no-repeat center 95px;
+                    }
+                    .you{
+                        display: block;width: 53px;height: 250px;float: right;background: url("../img/car_you.png") no-repeat center 95px;
+                    }
+                }
+            }
+        }
+
+    }   
+}
