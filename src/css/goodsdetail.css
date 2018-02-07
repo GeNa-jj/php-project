@@ -36,8 +36,8 @@ main .main .main_l .main_lt {
 }
 
 main .main .main_l .main_lt img {
-  width: 310px;
-  height: 310px;
+  width: 350px;
+  height: 350px;
 }
 
 main .main .main_l .main_lb {
@@ -45,24 +45,36 @@ main .main .main_l .main_lb {
   height: 60px;
   margin: 32px auto auto auto;
   overflow: hidden;
+  position: relative;
 }
 
-main .main .main_l .main_lb ul {
+main .main .main_l .main_lb .main_lbc {
+  width: 265px;
+  height: 60px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+main .main .main_l .main_lb .main_lbc ul {
   display: block;
   float: left;
   width: 90000px;
+  position: absolute;
 }
 
-main .main .main_l .main_lb ul li {
+main .main .main_l .main_lb .main_lbc ul li {
   display: block;
   width: 61px;
   height: 60px;
   float: left;
   text-align: center;
   cursor: pointer;
+  margin-right: 8px;
 }
 
-main .main .main_l .main_lb ul li img {
+main .main .main_l .main_lb .main_lbc ul li img {
   border: 2px solid #f86f76;
   display: block;
   height: 55px;
@@ -307,6 +319,7 @@ main .main .main_c ul li:nth-child(9) a {
   width: 210px;
   display: inline-block;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 main .main .main_c ul li:nth-child(9) .btn_append {

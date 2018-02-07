@@ -256,7 +256,7 @@ main{
             a{
                 font-weight: bold;color: #999;display: block;background-color: #fff;height: 39px;width: 62px;border: 1px solid #ddd;border-bottom: 0 none;text-align: center;line-height: 20px;padding: 0px 4px 0px 4px;font-size: 12px;
             }
-            a:hover{background-color: #ff3333;color: #fff;}
+            a:hover{background-color: #ff3333;color: #fff;cursor:pointer;}
             .active{background-color: #ff3333;color: #fff;}
         }
     }

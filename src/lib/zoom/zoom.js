@@ -1,11 +1,14 @@
+//  $('.goods').zoom({
+//     position:'right'
+// });
 "use strict";
 ;(function($){
     $.fn.zoom = function(options){
         var defaults = {
-            width:400,
+            width:450,
             height:300,
             position:'right',
-            gap:15
+            gap:0
         }
             
         return this.each(function(){
@@ -27,20 +30,20 @@
                 var left,top;
                 switch(opt.position){
                     case 'left':
-                        left:$small.offset().left-opt.width-opt.gap;
-                        top:$small.offset().top;
+                        left=$small.offset().left-opt.width-opt.gap;
+                        top=$small.offset().top;
                         break;
                     case 'right':
-                        left:$small.offset().left+$small.outerWidth()+opt.gap;
-                        top:$small.offset().top;
+                        left=$small.offset().left+$small.outerWidth()+opt.gap;
+                        top=$small.offset().top;
                         break;
                     case 'top':
-                        left:$small.offset().left;
-                        top:$small.offset().top-opt.height-opt.gap;
+                        left=$small.offset().left;
+                        top=$small.offset().top-opt.height-opt.gap;
                         break;
                     case 'bottom':
-                        left:$small.offset().left;
-                        top:$small.offset().top+$small.outerHeight()+opt.gap;
+                        left=$small.offset().left;
+                        top=$small.offset().top+$small.outerHeight()+opt.gap;
                         break;
                 }
 
@@ -51,7 +54,7 @@
                 $big.css({
                     left:left,
                     top:top
-                }).appendTo('body');
+                }).appendTo($small);
 
                 var $minzoom = $('<span/>').addClass('minzoom');
                 $minzoom.appendTo($small);
@@ -64,8 +67,7 @@
                     $minzoom.show();
                     $big.show();
 
-                    ratio = $bigImg.width()/$smallImg.width();console.log(ratio)
-                         
+                    ratio = $bigImg.width()/$smallImg.width();
                     $minzoom.css({
                         width:$big.width()/ratio,
                         height:$big.height()/ratio

@@ -11,18 +11,22 @@ main{
             width: 350px;height: 442px;float: left;position: relative;
             .main_lt{
                 width: 350px;height: 350px;   
-                img{width: 310px;height: 310px;}
+                img{width: 350px;height: 350px;}
             }
             .main_lb{
-                width: 305px;height: 60px;margin: 32px auto auto auto;overflow: hidden;
-                ul{
-                    display: block;float: left;width: 90000px;
-                    li{
-                        display: block;width: 61px;height: 60px;float: left;text-align: center;cursor: pointer;
-                        img{
-                            border: 2px solid #f86f76;display: block;height: 55px;width: 55px;
+                width: 305px;height: 60px;margin: 32px auto auto auto;overflow: hidden;position:relative;
+                .main_lbc{
+                    width: 265px;height: 60px;overflow: hidden;position: absolute;bottom:0;left:20px;
+                    ul{
+                        display: block;float: left;width: 90000px;position: absolute;
+                        li{
+                            display: block;width: 61px;height: 60px;float: left;text-align: center;cursor: pointer;margin-right: 8px;
+                            img{
+                                border: 2px solid #f86f76;display: block;height: 55px;width: 55px;
+                            }
                         }
                     }
+                    
                 }
                 .prev{
                     background-position: 0px 0px;left: 0px;bottom: 0px;display: block;width: 15px;height: 55px;position: absolute;background-image: url("../img/pn.png");background-repeat: no-repeat;cursor: pointer;
@@ -116,7 +120,7 @@ main{
                 li:nth-child(9){
                     margin-top: 20px;
                     a{
-                        height: 38px;width: 210px;display:inline-block;margin-right: 12px;
+                        height: 38px;width: 210px;display:inline-block;margin-right: 12px;cursor:pointer;
                     }
                     .btn_append{
                         background: #f86f76;color: #ffffff;font-size: 14px;text-align: center;line-height: 38px;float: left;

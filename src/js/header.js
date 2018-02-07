@@ -54,7 +54,7 @@ define(["jquery"],function($){
             user=JSON.parse(user); 
             if(user != '[]'){
                 user.forEach(function(item){
-                    $('.denglu').text(item.name+'，欢迎登陆！').removeAttr('href');
+                    $('.denglu').text(item.name+'，欢迎光临！').removeAttr('href');
                     $('.zhuce').text('退出').attr('href','#');
                 });
                 $('.zhuce').click(function(){

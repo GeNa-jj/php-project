@@ -564,6 +564,7 @@ main .louti li a {
 main .louti li a:hover {
   background-color: #ff3333;
   color: #fff;
+  cursor: pointer;
 }
 
 main .louti li .active {

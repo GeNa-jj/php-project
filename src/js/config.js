@@ -1,13 +1,15 @@
 require.config({
     paths:{
         'jquery':'../lib/jquery-3.2.1',
-        'carousel':'../lib/carousel/carousel'
+        'carousel':'../lib/carousel/carousel',
+        'zoom':'../lib/zoom/zoom'
     },
     shim:{
         'carousel':{
             deps:['jquery'],
             exports:'jQuery.fn.carousel'
         },
-        'header':['jquery']
+        'header':['jquery'],
+        'zoom':['jquery']
     }
 });

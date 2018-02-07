@@ -388,7 +388,9 @@ require(['config'],function(){
                                 alert('恭喜你登录成功！');
                                 $name.val('');
                                 $password.val('');
-                                Cookie.set('user',JSON.stringify(user),{path:'/'}); 
+                                var now = new Date();
+                                now.setDate(now.getDate()+7);
+                                Cookie.set('user',JSON.stringify(user),{expires:now,path:'/'}); 
                                 window.location.href="../index.html"; 
                                     
                             }else if(res==='yesno'){
