@@ -12,4 +12,7 @@
     $res = $conn -> query($sql);
 
     $arr = $res->fetch_assoc();
+
+    $res->free();
+    $conn->close();
     echo json_encode($arr,JSON_UNESCAPED_UNICODE);

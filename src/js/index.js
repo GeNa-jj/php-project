@@ -2,6 +2,7 @@ require(['config'],function(){
     require(['jquery','header','carousel','common'],function($,h){
         //导入头部/尾部
         $('header').load('html/header.html',function(){
+            $('#head_car_count').parent().attr('href','./html/car.html')
             h.header();
         });
         $('footer').load('html/footer.html');
@@ -167,7 +168,7 @@ require(['config'],function(){
         //右列表
         (function(){
              
-            $('.right_list').mouseenter(function(){console.log(666)
+            $('.right_list').mouseenter(function(){
                  
                 $(this).find('ul').show();
             }).mouseleave(function(){

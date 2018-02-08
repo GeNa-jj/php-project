@@ -50,6 +50,7 @@ define(["jquery"],function($){
                 $navMenu3.eq(idx).css('display','none');
             });    
 
+            //免登录
             var user = Cookie.get('user') || '[]';     
             user=JSON.parse(user); 
             if(user != ''){   
@@ -65,7 +66,15 @@ define(["jquery"],function($){
                     // Cookie.remove('user'); 
                     location.reload();     
                 });
-            }                       
+                $.ajax({
+                    url:'../api/car_num.php',
+                    data:{user:user[0].name},
+                    success:function(res){
+                        $('#head_car_count').text(res);
+                             
+                    }
+                });                    
+            } 
         }
     }
 });

@@ -27,3 +27,5 @@
 
     $res = $conn->query($sql);
     echo $res;
+    $res->free();
+    $conn->close();

@@ -4,6 +4,8 @@
     $user = isset($_GET['user']) ? $_GET['user'] : null;
 
     $sql = "select * from car where user='$user'";
+
+    // var_dump($user);
     $res = $conn->query($sql);
     if($res->num_rows > 0){
         $arr = $res->fetch_all(MYSQLI_ASSOC);
@@ -15,7 +17,9 @@
             $data['dispatching']=$item['dispatching'];
             $result[] = $data;
         }
-         echo json_encode($result,JSON_UNESCAPED_UNICODE);
+        echo json_encode($result,JSON_UNESCAPED_UNICODE);
     }else{
-        echo 'no';
+        echo json_encode('no',JSON_UNESCAPED_UNICODE);
     }
+    $res->free();
+    $conn->close();

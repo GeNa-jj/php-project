@@ -70,7 +70,7 @@ require(['config'],function(){
                             </li>
                             <li>
                                 销 量 ：
-                                <span>2453</span>
+                                <span>${res.sales}</span>
                             </li>
                             <li>
                                 <a class="btn_append">
@@ -164,6 +164,14 @@ require(['config'],function(){
                                     success:function(res){
                                         if(res=='yes'){
                                             alert('加入成功');
+                                            $.ajax({
+                                                url:'../api/car_num.php',
+                                                data:{user:user[0].name},
+                                                success:function(res){
+                                                    $('#head_car_count').text(res);
+                                                         
+                                                }
+                                            });
                                         }
                                              
                                     }

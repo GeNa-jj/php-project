@@ -75,32 +75,41 @@ main{
                 a{cursor:pointer;}
             }
             .car_b{
-                margin-top: 38px;
-                .car_bt{
-                    height: 33px;background-color: #ccc;background: url("../img/border-x.jpg") repeat-x bottom left;
-                    span{color: #f86f76;background: #ffffff;border: 1px solid #d3d3d3;border-bottom: 1px solid #fff;display: inline;padding: 6px 28px;font-size: 14px;cursor: pointer;float: left;}
-                }
-                .car_bb{
-                    display: block;width: 1198px;margin: 0px auto;background: #ffffff;padding-top: 34px;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;overflow: hidden;position: relative;height: 300px;margin-bottom: 100px;
-                    ul{
-                        li{
-                            display: block;width: 1200px;position: absolute;left: 0px;top: 0px;padding: 6px 28px;font-size: 14px;color: #333333;float: left;cursor: pointer;
-                            a{
-                                width: 190px;float: left;display:block;line-height: 18px;padding: 0 16px;
-                                 span{display: block;width: 135px;text-align: center;color: #e43b36;font-weight: bold;font-size: 14px;margin-top: 20px;}
+                height: 38px;background: #f3f3f3;position:relative;
+                a{width: 123px;height: 42px;background: #f26e78;font-size: 16px;color: #fff;font-weight: bold;position: absolute;right: 0px;top: 0px;text-align: center;line-height: 42px;cursor: pointer;}
+                p{float: right;margin-right: 160px;line-height: 38px;font-size: 14px;color: #5c5c5c;font-weight: bold}
+                .total{font-weight: bold;font-size: 24px;color: #f86f76;margin-top: -5px;}
+            }
+        }
+        .banner{
+            margin-top: 38px;
+            .banner_t{
+                height: 33px;background-color: #ccc;background: url("../img/border-x.jpg") repeat-x bottom left;
+                span{color: #f86f76;background: #ffffff;border: 1px solid #d3d3d3;border-bottom: 1px solid #fff;display: inline;padding: 6px 28px;font-size: 14px;cursor: pointer;float: left;}
+            }
+            .banner_b{
+                display: block;width: 1198px;margin: 0px auto;background: #ffffff;padding-top: 34px;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;overflow: hidden;position: relative;height: 300px;margin-bottom: 100px;
+                ul{
+                    li{
+                        display: block;width: 1200px;position: absolute;left: 0px;top: 0px;padding: 6px 28px;font-size: 14px;color: #333333;float: left;cursor: pointer;float: left;
+                        a{
+                            width: 190px;float: left;display:block;line-height: 18px;padding: 0 16px;
+                            p{height: 72px;}
+                            span{display: block;width: 135px;text-align: center;color: #e43b36;font-weight: bold;font-size: 14px;margin-top: 20px;}
 
-                            }
                         }
                     }
-                    .zuo{
-                        display: block;width: 53px;height: 250px;float: left;background: url("../img/car_zuo.png") no-repeat center 95px;
+                    li:nth-child(2){
+                        left: 1172px;
                     }
-                    .you{
-                        display: block;width: 53px;height: 250px;float: right;background: url("../img/car_you.png") no-repeat center 95px;
-                    }
+                }
+                .zuo{
+                    display: block;width: 53px;height: 250px;float: left;background: url("../img/car_zuo.png") no-repeat center 95px;
+                }
+                .you{
+                    display: block;width: 53px;height: 250px;float: right;background: url("../img/car_you.png") no-repeat center 95px;
                 }
             }
         }
-
     }   
 }
