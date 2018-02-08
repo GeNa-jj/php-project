@@ -161,9 +161,30 @@ require(['config'],function(){
                                         qty:$('.jia').prev().val(),
                                         dispatching:$('.main_c').find('li').eq(5).find('div').filter('.active').text()
                                     },
-                                    success:function(res){
-                                        if(res=='yes'){
-                                            alert('加入成功');
+                                    success:function(res1){
+                                        if(res1=='yes'){
+                                            var $imgCopy = $('<img/>')
+                                            $imgCopy.attr('src',res.picture);
+                                            $imgCopy.css({
+                                                position:'absolute',
+                                                left:$('.main_lt').offset().left,
+                                                top:$('.main_lt').offset().top,
+                                                width:$('.main_lt').width(),
+                                                height:$('.main_lt').height()
+                                            }).appendTo('body');
+                                            $('body').css({
+                                                position:'relative'
+                                            });
+                                            $imgCopy.animate({
+                                                left:$('#head_car_count').offset().left,
+                                                top:$('#head_car_count').offset().top,
+                                                width:0,
+                                                height:0
+                                                },function(){
+                                                    $(this).remove();
+                                            })
+
+                                                 
                                             $.ajax({
                                                 url:'../api/car_num.php',
                                                 data:{user:user[0].name},

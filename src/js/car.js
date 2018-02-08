@@ -58,17 +58,14 @@ require(['config'],function(){
                         </li>`;
                     });
                     $('.car_c').find('ul').html(html);
-                    $('.total').text(total.toFixed(2));
-
-                    $('#head_car_count').text($('.car_c li').length);
-                        
+                    $('.total').text(total.toFixed(2));       
                          
                 }else{
                     $('.car_none').text('购物车中没有商品');
-                    $('.car').hide();
-                    
-                         
+                    $('.car').hide(); 
+                    $('.car_c').find('ul').html('');   
                 }
+                $('#head_car_count').text($('.car_c li').length);
             }
             function updata(){
                 $.ajax({
@@ -148,9 +145,10 @@ require(['config'],function(){
             if(user!=''){
                 updata(); 
             }
+        })();
 
-
-            // 轮播商品
+        // 轮播商品
+        (function(){
             $.ajax({
                 type:'get',
                 url:'../api/goodslist.php',
@@ -178,10 +176,46 @@ require(['config'],function(){
 
                     $('.banner_b').find('li').eq(1).html(html);
 
+                    var timer;
+                    timer = setInterval(function(){
+                        lunbo();
+                    },5000);
+                    $('.banner').mouseenter(function(event){
+                        clearInterval(timer);
+                    }).mouseleave(function(event){
+                        clearInterval(timer);
+                        timer = setInterval(function(){
+                            lunbo();
+                        },5000);
+                    });
+
+                    function lunbo(){
+                        $('.banner_b').find('li').eq(0).animate({'left':'-1172'},function(){
+                            var $a = $(this).clone();
+                            $(this).remove();    
+                            $('.banner_b').find('ul').append($a);
+                            $a.css('left','1172px');
+                              
+                        });
+                        $('.banner_b').find('li').eq(1).animate({'left':'0'});
+                    }
+
+                    $('.you').click(function(){
+                        lunbo();
+                    });
+                    $('.zuo').click(function(){
+                        var $a = $('.banner_b').find('li').eq(1).clone();
+                        $('.banner_b').find('li').eq(1).remove();    
+                        $('.banner_b').find('ul').prepend($a);
+                        $a.css('left','-1172px');
+
+                        $('.banner_b').find('li').eq(0).animate({'left':'0'});
+                        $('.banner_b').find('li').eq(1).animate({'left':'1172'});
+                    });
                 },
                 dataType:'json'
             });
         })();
-       
+        
     });
 });

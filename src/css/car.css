@@ -235,24 +235,25 @@ main .container .banner .banner_b {
 
 main .container .banner .banner_b ul li {
   display: block;
-  width: 1200px;
+  width: 1140px;
   position: absolute;
   left: 0px;
   top: 0px;
-  padding: 6px 28px;
+  padding: 6px 0;
   font-size: 14px;
   color: #333333;
   float: left;
   cursor: pointer;
   float: left;
+  margin: 0 28px;
 }
 
 main .container .banner .banner_b ul li a {
-  width: 190px;
+  width: 158px;
   float: left;
   display: block;
   line-height: 18px;
-  padding: 0 16px;
+  margin: 0 16px;
 }
 
 main .container .banner .banner_b ul li a p {
@@ -278,7 +279,8 @@ main .container .banner .banner_b .zuo {
   width: 53px;
   height: 250px;
   float: left;
-  background: url("../img/car_zuo.png") no-repeat center 95px;
+  background: url("../img/car_zuo.png") no-repeat 5px 95px;
+  z-index: 9999;
 }
 
 main .container .banner .banner_b .you {
@@ -286,5 +288,6 @@ main .container .banner .banner_b .you {
   width: 53px;
   height: 250px;
   float: right;
-  background: url("../img/car_you.png") no-repeat center 95px;
+  background: url("../img/car_you.png") no-repeat 30px 95px;
+  z-index: 9999;
 }

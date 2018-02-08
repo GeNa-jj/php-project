@@ -91,9 +91,9 @@ main{
                 display: block;width: 1198px;margin: 0px auto;background: #ffffff;padding-top: 34px;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;overflow: hidden;position: relative;height: 300px;margin-bottom: 100px;
                 ul{
                     li{
-                        display: block;width: 1200px;position: absolute;left: 0px;top: 0px;padding: 6px 28px;font-size: 14px;color: #333333;float: left;cursor: pointer;float: left;
+                        display: block;width: 1140px;position: absolute;left: 0px;top: 0px;padding: 6px 0;font-size: 14px;color: #333333;float: left;cursor: pointer;float: left;margin: 0 28px;
                         a{
-                            width: 190px;float: left;display:block;line-height: 18px;padding: 0 16px;
+                            width: 158px;float: left;display:block;line-height: 18px;margin: 0 16px;
                             p{height: 72px;}
                             span{display: block;width: 135px;text-align: center;color: #e43b36;font-weight: bold;font-size: 14px;margin-top: 20px;}
 
@@ -104,10 +104,10 @@ main{
                     }
                 }
                 .zuo{
-                    display: block;width: 53px;height: 250px;float: left;background: url("../img/car_zuo.png") no-repeat center 95px;
+                    display: block;width: 53px;height: 250px;float: left;background: url("../img/car_zuo.png") no-repeat 5px 95px;z-index:9999;
                 }
                 .you{
-                    display: block;width: 53px;height: 250px;float: right;background: url("../img/car_you.png") no-repeat center 95px;
+                    display: block;width: 53px;height: 250px;float: right;background: url("../img/car_you.png") no-repeat 30px 95px;z-index:9999;
                 }
             }
         }

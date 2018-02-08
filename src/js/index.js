@@ -2,7 +2,6 @@ require(['config'],function(){
     require(['jquery','header','carousel','common'],function($,h){
         //导入头部/尾部
         $('header').load('html/header.html',function(){
-            $('#head_car_count').parent().attr('href','./html/car.html')
             h.header();
         });
         $('footer').load('html/footer.html');
@@ -177,82 +176,84 @@ require(['config'],function(){
         })();
 
         // 数据生成列表
-        var html='';
-        for(var i=1;i<13;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/brand${i}.png" alt="" /></a></li>`
-        }    
-        $('.brandSalesBC').find('ul').html(html);
+        (function(){
+            var html='';
+            for(var i=1;i<13;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/brand${i}.png" alt="" /></a></li>`
+            }    
+            $('.brandSalesBC').find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/hdtj_${i}.jpg" alt="" /></a></li>`
-        }
-        $('.hdtjBL').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/hdtj_${i}.jpg" alt="" /></a></li>`
+            }
+            $('.hdtjBL').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/bsq_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.bsq_1L').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/bsq_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.bsq_1L').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/bsq_d${i}.jpg" alt="" /></a></li>`
-        }
-        $('.bsq_2L').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/bsq_d${i}.jpg" alt="" /></a></li>`
+            }
+            $('.bsq_2L').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/spbj_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.spbj_1L').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/spbj_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.spbj_1L').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/spbj_d${i}.jpg" alt="" /></a></li>`
-        }
-        $('.spbj_2L').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/spbj_d${i}.jpg" alt="" /></a></li>`
+            }
+            $('.spbj_2L').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/spbj_f${i}.jpg" alt="" /></a></li>`
-        }
-        $('.spbj_3L').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/spbj_f${i}.jpg" alt="" /></a></li>`
+            }
+            $('.spbj_3L').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/yeyp_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.yeypBL').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/yeyp_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.yeypBL').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/mz_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.mzBL').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/mz_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.mzBL').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/jjrh_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.jjrhBL').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/jjrh_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.jjrhBL').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/smdz_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.smdzBL').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/smdz_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.smdzBL').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/xbss_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.xbssBL').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/xbss_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.xbssBL').next().find('ul').html(html);
 
-        html='';
-        for(var i=1;i<7;i++){
-            html+=` <li><a href="html/goodslist.html"><img src="img/cryp_b${i}.jpg" alt="" /></a></li>`
-        }
-        $('.crypBL').next().find('ul').html(html);
+            html='';
+            for(var i=1;i<7;i++){
+                html+=` <li><a href="html/goodslist.html"><img src="img/cryp_b${i}.jpg" alt="" /></a></li>`
+            }
+            $('.crypBL').next().find('ul').html(html);
+        })();
     });
 });

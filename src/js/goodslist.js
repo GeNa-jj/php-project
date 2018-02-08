@@ -42,8 +42,8 @@ require(['config'],function(){
                     var html2='';
                     for(var i=5;i<15;i++){
                         html2 += `<li data-id="${res.data[i].id}">
-                            <a href="#"><img src="${res.data[i].picture}" alt="" /></a>
-                            <a class="gl_title" href="#">【包邮】【保税区闪送】${res.data[i].name}</a>
+                            <a href="../html/goodsdetail.html?${res.data[i].id}"><img src="${res.data[i].picture}" alt="" /></a>
+                            <a class="gl_title" href="../html/goodsdetail.html?${res.data[i].id}">【包邮】【保税区闪送】${res.data[i].name}</a>
                             <span class="gl_price">${res.data[i].price}</span>
                         </li>` ;
                     }
