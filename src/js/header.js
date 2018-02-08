@@ -52,7 +52,7 @@ define(["jquery"],function($){
 
             var user = Cookie.get('user') || '[]';     
             user=JSON.parse(user); 
-            if(user != '[]'){
+            if(user != ''){   
                 user.forEach(function(item){
                     $('.denglu').text(item.name+'，欢迎光临！').removeAttr('href');
                     $('.zhuce').text('退出').attr('href','#');

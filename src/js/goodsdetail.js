@@ -1,7 +1,7 @@
 require(['config'],function(){
     require(['jquery','header','carousel','zoom','common'],function($,h){
         //导入头部/尾部
-        $('header').load('header.html',function(){
+        $('header').load('./header.html',function(){
             
                 // 隐藏二级导航      
                 var $navAll = $('#navAll');
@@ -21,7 +21,7 @@ require(['config'],function(){
                 h.header();
            
         });
-        $('footer').load('/footer.html');
+        $('footer').load('./footer.html');
 
         // 数据生成
         (function(){
@@ -75,7 +75,7 @@ require(['config'],function(){
                             <li>
                                 <a class="btn_append">
                                 <img src="../img/car-btn.png" height="19" width="19" alt="" /> 加入购物车</a>
-                                <a class="btn_buy">立即购买</a>
+                                <a href="./car.html" class="btn_buy">立即购买</a>
                             </li>
                             <li>
                                 <div>
@@ -145,6 +145,34 @@ require(['config'],function(){
                             $(this).find('span').text(zan);
 
                             $(this).off();
+                        });
+
+                        // 加入购物车
+                        $('.btn_append').click(function(){
+                            var user = Cookie.get('user') || '[]';     
+                            user=JSON.parse(user); 
+                            if(user != ''){
+                                     
+                                $.ajax({
+                                    url:'../api/addcar.php',
+                                    data:{
+                                        user:user[0].name,
+                                        id:res.id,
+                                        qty:$('.jia').prev().val(),
+                                        dispatching:$('.main_c').find('li').eq(5).find('div').filter('.active').text()
+                                    },
+                                    success:function(res){
+                                        if(res=='yes'){
+                                            alert('加入成功');
+                                        }
+                                             
+                                    }
+                                });
+                                     
+                            }else{
+                                alert('未登录，无法加入购物车');
+                            }         
+                            
                         });
                 },
                 dataType:'json'
