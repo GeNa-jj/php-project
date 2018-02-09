@@ -69,6 +69,7 @@
   text-align: center;
   display: none;
   color: #fff;
+  border-radius: 0 20px 20px 0;
 }
 
 .banner .container .bannerL .you {
@@ -85,6 +86,7 @@
   text-align: center;
   display: none;
   color: #fff;
+  border-radius: 20px 0 0 20px;
 }
 
 .banner .container .bannerL .zuo:hover, .banner .container .bannerL .you:hover {

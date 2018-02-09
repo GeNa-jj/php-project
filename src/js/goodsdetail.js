@@ -223,6 +223,9 @@ require(['config'],function(){
                      
             });
 
+            $('.main_lbc').on('click','img',function(){
+                $('.main_lt').children('img')[0].src=$(this)[0].src;      
+            });
             var $tab = $('.allT').find('ul');
             $tab.on('click','li',function(){
                 $(this).addClass('active').siblings().removeClass('active');

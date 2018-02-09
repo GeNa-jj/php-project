@@ -380,8 +380,7 @@ require(['config'],function(){
                                  
                             if(res==='yesyes'){
                                 var user = [{
-                                    name:name,
-                                    password:password
+                                    name:name
                                 }];
                                 $name.next().hide();
                                 $password.next().hide();

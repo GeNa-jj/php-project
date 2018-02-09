@@ -14,8 +14,8 @@
                 }
                 .active{background-color: rgba(255,0,0,.8);}
             }
-            .zuo{position: absolute;left: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
-            .you{position: absolute;right: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;}
+            .zuo{position: absolute;left: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;border-radius: 0 20px 20px 0;}
+            .you{position: absolute;right: 0;top: 50%;transform:translate(0,-50%);width: 20px;height: 50px;background-color:rgba(0,0,0,.6);font-size: 14px;line-height: 50px;opacity: 0.8;text-align: center;display:none;color:#fff;border-radius: 20px 0 0 20px;}
             .zuo:hover,.you:hover{background-color: #fc0;cursor: pointer;}
         }
         .bannerR{
