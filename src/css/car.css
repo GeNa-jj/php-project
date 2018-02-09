@@ -127,6 +127,7 @@ main .container .car .car_c ul li .qty input {
   float: left;
   text-align: center;
   line-height: 33px;
+  background-color: #fff;
 }
 
 main .container .car .car_c ul li .qty .jian {

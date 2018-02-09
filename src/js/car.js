@@ -45,7 +45,7 @@ require(['config'],function(){
                             </div>
                             <div class="qty">
                                 <a class="jian">-</a>
-                                <input type="text" value="${item.qty}"/>
+                                <input type="text" value="${item.qty}" disabled/>
                                 <a class="jia">+</a>
                             </div>
                             <div class="sum">
@@ -117,7 +117,6 @@ require(['config'],function(){
                             });
 
                         });
-
                         $('.del').click(function(){
                             var id = $(this).closest('li')[0].dataset.id;
                             var dispatching = $(this).closest('li').find('.dispatching').text();
